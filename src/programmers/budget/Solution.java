@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Solution {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.solution(new int[] {1,3,2,5,4}, 9));
+        System.out.println(solution.solution(new int[] {6,2,3,1,4}, 16));
     }
     public int solution(int[] d, int budget) {
         int answer = 0;
@@ -21,7 +21,7 @@ public class Solution {
             }
         }
 
-        if(remainder <= budget) {
+        if (remainder <= budget) {
             answer = d.length;
         }
 
