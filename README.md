@@ -9,5 +9,12 @@
 * [나머지가 1이 되는 수 찾기](https://programmers.co.kr/learn/courses/30/lessons/87389)   
 * [2016년](https://programmers.co.kr/learn/courses/30/lessons/87389)
 * [두 개 뽑아서 더하기](https://programmers.co.kr/learn/courses/30/lessons/68644)
-* 
+* [튜플](https://programmers.co.kr/learn/courses/30/lessons/64065)
+* [신고 결과 받기](https://programmers.co.kr/learn/courses/30/lessons/92334)
+* [숫자 문자열과 영단어](https://programmers.co.kr/learn/courses/30/lessons/81301)
+* [완주하지 못한 선수](https://programmers.co.kr/learn/courses/30/lessons/42576)
+* [가장 큰 수](https://programmers.co.kr/learn/courses/30/lessons/42746)
+* [소수 만들기](https://programmers.co.kr/learn/courses/30/lessons/12977)
+* [전화번호 목록](https://programmers.co.kr/learn/courses/30/lessons/42577)
+* [예산](https://programmers.co.kr/learn/courses/30/lessons/12982)
 
