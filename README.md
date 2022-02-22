@@ -24,5 +24,6 @@
 * [실패율](https://programmers.co.kr/learn/courses/30/lessons/42889)
 * [폰켓몬](https://programmers.co.kr/learn/courses/30/lessons/1845)
 * [비밀지도](https://programmers.co.kr/learn/courses/30/lessons/17681)
+* [크레인 인형뽑기 게임](https://programmers.co.kr/learn/courses/30/lessons/64061)
 
 
