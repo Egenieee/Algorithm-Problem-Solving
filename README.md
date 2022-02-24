@@ -26,5 +26,6 @@
 * [비밀지도](https://programmers.co.kr/learn/courses/30/lessons/17681)
 * [크레인 인형뽑기 게임](https://programmers.co.kr/learn/courses/30/lessons/64061)
 * [시저 암호](https://programmers.co.kr/learn/courses/30/lessons/12926)
+* [이상한 문자 만들기](https://programmers.co.kr/learn/courses/30/lessons/12930)
 
 
