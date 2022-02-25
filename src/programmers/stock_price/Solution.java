@@ -33,7 +33,6 @@ public class Solution {
             // 얼마나 버텼는 지 기록
             answer[i] = count;
         }
-
         return answer;
     }
 }
