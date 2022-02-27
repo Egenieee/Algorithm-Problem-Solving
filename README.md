@@ -28,4 +28,6 @@
 * [시저 암호](https://programmers.co.kr/learn/courses/30/lessons/12926)
 * [이상한 문자 만들기](https://programmers.co.kr/learn/courses/30/lessons/12930)
 * [주식가격](https://programmers.co.kr/learn/courses/30/lessons/42584)
+* [부족한 금액 계산하기](https://programmers.co.kr/learn/courses/30/lessons/82612)
+
 
