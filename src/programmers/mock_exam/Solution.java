@@ -34,7 +34,7 @@ public class Solution {
     private List<Integer> getAnswerOne() {
         // 1 2 3 4 5 1 2 3 4 5
         List<Integer> answer = new ArrayList<>();
-        for (int i = 0 ; i < 10000 ; i++) {
+        for (int i = 0 ; i < 2000 ; i++) {
             answer.add(1);
             answer.add(2);
             answer.add(3);
@@ -46,7 +46,7 @@ public class Solution {
     private List<Integer> getAnswerTwo() {
         // 2 1 2 3 2 4 2 5
         List<Integer> answer = new ArrayList<>();
-        for (int i = 0 ; i < 10000 ; i++) {
+        for (int i = 0 ; i < 1250 ; i++) {
             answer.add(2);
             answer.add(1);
             answer.add(2);
@@ -61,7 +61,7 @@ public class Solution {
     private List<Integer> getAnswerThree() {
         // 3 3 1 1 2 2 4 4 5 5
         List<Integer> answer = new ArrayList<>();
-        for (int i = 0 ; i < 10000 ; i++) {
+        for (int i = 0 ; i < 1000 ; i++) {
             answer.add(3);
             answer.add(3);
             answer.add(1);
