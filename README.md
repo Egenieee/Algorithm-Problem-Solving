@@ -35,3 +35,4 @@
 * [JadenCase 문자열 만들기](https://programmers.co.kr/learn/courses/30/lessons/12951/questions)
 * [이진 변환 반복하기](https://programmers.co.kr/learn/courses/30/lessons/70129)
 * [하샤드 수](https://programmers.co.kr/learn/courses/30/lessons/12947)
+* [모의고사](https://programmers.co.kr/learn/courses/30/lessons/42840)
