@@ -6,7 +6,13 @@
 * [단어 공부](https://www.acmicpc.net/problem/1157)
 
 
+
 ## leetcode
+* [Number of Strings That Appear as Substrings in Word](https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/)
+* [Check if One String Swap Can Make Strings Equal](https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/)
+* [Check If N and Its Double Exist](https://leetcode.com/problems/check-if-n-and-its-double-exist/)
+* [Check If It Is a Straight Line](https://leetcode.com/problems/check-if-it-is-a-straight-line/)
+* [Day of the Year](https://leetcode.com/problems/day-of-the-year/)
 
 
 ## programmers
