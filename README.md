@@ -49,3 +49,4 @@
 * [하샤드 수](https://programmers.co.kr/learn/courses/30/lessons/12947)
 * [모의고사](https://programmers.co.kr/learn/courses/30/lessons/42840)
 * [약수의 개수와 덧셈](https://programmers.co.kr/learn/courses/30/lessons/77884)
+* [위장](https://programmers.co.kr/learn/courses/30/lessons/42578)
