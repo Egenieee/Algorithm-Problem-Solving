@@ -4,6 +4,7 @@
 ## baekjoon
 * [알파벳 찾기](https://www.acmicpc.net/problem/10809)
 * [단어 공부](https://www.acmicpc.net/problem/1157)
+* [손익분기점](https://www.acmicpc.net/problem/1712)
 
 
 
