@@ -11,6 +11,7 @@
 * [주사위 세개](https://www.acmicpc.net/problem/2480)
 * [숫자의 합](https://www.acmicpc.net/problem/11720)
 * [문자열 반복](https://www.acmicpc.net/problem/2675)
+* [상수](https://www.acmicpc.net/problem/2908)
 
 
 
