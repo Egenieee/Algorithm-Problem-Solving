@@ -1,29 +1,6 @@
 # Algorithm-Problem-Solving
 #### 알고리즘 문제 풀이
 
-## baekjoon
-* [알파벳 찾기](https://www.acmicpc.net/problem/10809)
-* [단어 공부](https://www.acmicpc.net/problem/1157)
-* [손익분기점](https://www.acmicpc.net/problem/1712)
-* [셀프 넘버](https://www.acmicpc.net/problem/4673)
-* [한수](https://www.acmicpc.net/problem/1065)
-* [오븐 시계](https://www.acmicpc.net/problem/2525)
-* [주사위 세개](https://www.acmicpc.net/problem/2480)
-* [숫자의 합](https://www.acmicpc.net/problem/11720)
-* [문자열 반복](https://www.acmicpc.net/problem/2675)
-* [상수](https://www.acmicpc.net/problem/2908)
-* [다이얼](https://www.acmicpc.net/problem/5622)
-
-
-
-## leetcode
-* [Number of Strings That Appear as Substrings in Word](https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/)
-* [Check if One String Swap Can Make Strings Equal](https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/)
-* [Check If N and Its Double Exist](https://leetcode.com/problems/check-if-n-and-its-double-exist/)
-* [Check If It Is a Straight Line](https://leetcode.com/problems/check-if-it-is-a-straight-line/)
-* [Day of the Year](https://leetcode.com/problems/day-of-the-year/)
-
-
 ## programmers
 * [문자열 다루기 기본](https://programmers.co.kr/learn/courses/30/lessons/12918)   
 * [수박수박수박수박수박수?](https://programmers.co.kr/learn/courses/30/lessons/12922)   
@@ -61,3 +38,33 @@
 * [위장](https://programmers.co.kr/learn/courses/30/lessons/42578)
 * [최솟값 만들기](https://programmers.co.kr/learn/courses/30/lessons/12941)
 * [3진법 뒤집기](https://programmers.co.kr/learn/courses/30/lessons/68935)
+
+
+
+## leetcode
+* [Number of Strings That Appear as Substrings in Word](https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/)
+* [Check if One String Swap Can Make Strings Equal](https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/)
+* [Check If N and Its Double Exist](https://leetcode.com/problems/check-if-n-and-its-double-exist/)
+* [Check If It Is a Straight Line](https://leetcode.com/problems/check-if-it-is-a-straight-line/)
+* [Day of the Year](https://leetcode.com/problems/day-of-the-year/)
+* [Duplicate Zeros](https://leetcode.com/problems/duplicate-zeros/)
+* [Find Common Characters](https://leetcode.com/problems/find-common-characters/)
+* [Add to Array-Form of Integer](https://leetcode.com/problems/add-to-array-form-of-integer/)
+* [Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array/)
+* [Long Pressed Name](https://leetcode.com/problems/long-pressed-name/)
+* [Buddy Strings](https://leetcode.com/problems/buddy-strings/)
+
+
+
+## baekjoon
+* [알파벳 찾기](https://www.acmicpc.net/problem/10809)
+* [단어 공부](https://www.acmicpc.net/problem/1157)
+* [손익분기점](https://www.acmicpc.net/problem/1712)
+* [셀프 넘버](https://www.acmicpc.net/problem/4673)
+* [한수](https://www.acmicpc.net/problem/1065)
+* [오븐 시계](https://www.acmicpc.net/problem/2525)
+* [주사위 세개](https://www.acmicpc.net/problem/2480)
+* [숫자의 합](https://www.acmicpc.net/problem/11720)
+* [문자열 반복](https://www.acmicpc.net/problem/2675)
+* [상수](https://www.acmicpc.net/problem/2908)
+* [다이얼](https://www.acmicpc.net/problem/5622)
