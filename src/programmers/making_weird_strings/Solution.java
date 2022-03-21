@@ -1,6 +1,4 @@
-package programmers.making_weird_number;
-
-import java.util.List;
+package programmers.making_weird_strings;
 
 public class Solution {
     public static void main(String[] args) {
