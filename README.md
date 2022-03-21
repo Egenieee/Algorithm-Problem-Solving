@@ -3,6 +3,7 @@
 
 ## programmers
 * [문자열 다루기 기본](https://programmers.co.kr/learn/courses/30/lessons/12918)   
+* [없는 숫자 더하기](https://programmers.co.kr/learn/courses/30/lessons/86051)
 * [수박수박수박수박수박수?](https://programmers.co.kr/learn/courses/30/lessons/12922)   
 * [나머지가 1이 되는 수 찾기](https://programmers.co.kr/learn/courses/30/lessons/87389)   
 * [2016년](https://programmers.co.kr/learn/courses/30/lessons/87389)
