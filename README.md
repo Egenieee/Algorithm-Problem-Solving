@@ -39,7 +39,7 @@
 * [최솟값 만들기](https://programmers.co.kr/learn/courses/30/lessons/12941)
 * [3진법 뒤집기](https://programmers.co.kr/learn/courses/30/lessons/68935)
 * [콜라츠 추측](https://programmers.co.kr/learn/courses/30/lessons/12943)
-
+* [두 정수 사이의 합](https://programmers.co.kr/learn/courses/30/lessons/12912)
 
 ## leetcode
 * [Number of Strings That Appear as Substrings in Word](https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/)
