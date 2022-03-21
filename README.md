@@ -42,6 +42,8 @@
 * [두 정수 사이의 합](https://programmers.co.kr/learn/courses/30/lessons/12912)
 * [문자열 내 마음대로 정렬하기](https://programmers.co.kr/learn/courses/30/lessons/12915)
 
+
+
 ## leetcode
 * [Number of Strings That Appear as Substrings in Word](https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/)
 * [Check if One String Swap Can Make Strings Equal](https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/)
@@ -72,3 +74,4 @@
 * [문자열 반복](https://www.acmicpc.net/problem/2675)
 * [상수](https://www.acmicpc.net/problem/2908)
 * [다이얼](https://www.acmicpc.net/problem/5622)
+* [그룹 단어 체커](https://www.acmicpc.net/problem/1316)
