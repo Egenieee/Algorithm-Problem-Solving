@@ -9,6 +9,9 @@ public class Solution {
         int answer = 0;
 
         for (int i = 2 ; i <= n ; i++) {
+            if (i != 2 && i % 2 == 0) {
+                continue;
+            }
             if (isPrimeNumber(i)) {
                 answer++;
             }
@@ -17,9 +20,6 @@ public class Solution {
         return answer;
     }
     private boolean isPrimeNumber(int n) {
-        if (n != 2 && n % 2 == 0) {
-            return false;
-        }
         int divisor = 2;
         boolean isPrime = true;
 
