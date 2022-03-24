@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 // 7	000...0111
-// 11   000...1011
-
 // 8	000...1000	4
 // 9	000...1001	3
 // 10	000...1010	3
