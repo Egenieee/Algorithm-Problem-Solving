@@ -17,6 +17,9 @@ public class Solution {
         return answer;
     }
     private boolean isPrimeNumber(int n) {
+        if (n != 2 && n % 2 == 0) {
+            return false;
+        }
         int divisor = 2;
         boolean isPrime = true;
 
