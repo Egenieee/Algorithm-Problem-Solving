@@ -48,42 +48,16 @@ public class Solution {
     }
 
     private int getDiff(long number, long counterpart) {
-        String numberBitsBeforeSetting = Long.toBinaryString(number);
-        String counterpartBitsBeforeSetting = Long.toBinaryString(counterpart);
-
-        int max = Math.max(numberBitsBeforeSetting.length(), counterpartBitsBeforeSetting.length());
-        int diff = Math.abs(numberBitsBeforeSetting.length() - counterpartBitsBeforeSetting.length());
-
-        String numberBits = getNumberBits(numberBitsBeforeSetting, max, diff);
-        String counterpartBits = getCounterpartBits(counterpartBitsBeforeSetting, max, diff);
-
+        String xor = Long.toBinaryString(number ^ counterpart);
         // 다른 비트 개수 세기
         int count = 0;
 
-        for (int i = 0 ; i < numberBits.length() ; i++) {
-            if (numberBits.charAt(i) != counterpartBits.charAt(i)) {
+        for (int i = 0 ; i <xor.length() ; i++) {
+            if (xor.charAt(i) == '1') {
                 count++;
             }
         }
 
         return count;
-    }
-
-    private String getNumberBits(String numberBitsBeforeSetting, int max, int diff) {
-        if (numberBitsBeforeSetting.length() == max) {
-            return numberBitsBeforeSetting;
-        }
-        String zeroes = "0".repeat(diff);
-
-        return zeroes + numberBitsBeforeSetting;
-    }
-
-    private String getCounterpartBits(String counterpartBitsBeforeSetting, int max, int diff) {
-        if (counterpartBitsBeforeSetting.length() == max) {
-            return counterpartBitsBeforeSetting;
-        }
-        String zeroes = "0".repeat(diff);
-
-        return zeroes + counterpartBitsBeforeSetting;
     }
 }
