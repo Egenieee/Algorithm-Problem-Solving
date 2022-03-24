@@ -22,7 +22,7 @@ public class Solution {
 
         while (divisor < n) {
             if (n % divisor == 0) { // 1과 자기자신 제외한 다른 수로 나눠지면 소수 아님
-                isPrime = false;
+                return false;
             }
             divisor++;
         }
