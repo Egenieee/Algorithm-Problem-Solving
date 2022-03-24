@@ -43,6 +43,7 @@
 * [두 정수 사이의 합](https://programmers.co.kr/learn/courses/30/lessons/12912)
 * [문자열 내 마음대로 정렬하기](https://programmers.co.kr/learn/courses/30/lessons/12915)
 * [베스트앨범](https://programmers.co.kr/learn/courses/30/lessons/42579)
+* [소수 찾기](https://programmers.co.kr/learn/courses/30/lessons/12921)
 
 
 
