@@ -64,6 +64,7 @@
 * [Most Common Word](https://leetcode.com/problems/most-common-word/)
 * [Binary Number with Alternating Bits](https://leetcode.com/problems/binary-number-with-alternating-bits/)
 * [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/)
+* [Detect Capital](https://leetcode.com/problems/detect-capital/)
 
 
 ## baekjoon
