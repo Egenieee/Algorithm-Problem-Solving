@@ -46,6 +46,7 @@
 * [소수 찾기](https://programmers.co.kr/learn/courses/30/lessons/12921)
 * [문자열 내 p와 y의 개수](https://programmers.co.kr/learn/courses/30/lessons/12916)
 * [메뉴 리뉴얼](https://programmers.co.kr/learn/courses/30/lessons/72411) - 정확도 20% 다시 풀어보기
+* [프린터](https://programmers.co.kr/learn/courses/30/lessons/42587)
 
 
 
