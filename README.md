@@ -70,6 +70,8 @@
 * [Detect Capital](https://leetcode.com/problems/detect-capital/)
 * [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)
 * [Number Complement](https://leetcode.com/problems/number-complement/)
+* [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)
+* [Add Strings](https://leetcode.com/problems/add-strings/)
 
 
 ## baekjoon
