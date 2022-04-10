@@ -72,6 +72,8 @@
 * [Number Complement](https://leetcode.com/problems/number-complement/)
 * [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)
 * [Add Strings](https://leetcode.com/problems/add-strings/)
+* [Third Maximum Number](https://leetcode.com/problems/third-maximum-number/)
+* [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)
 
 
 ## baekjoon
