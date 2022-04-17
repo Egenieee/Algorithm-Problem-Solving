@@ -78,7 +78,11 @@
 * [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)
 * [Is Subsequence](https://leetcode.com/problems/is-subsequence/)
 * [Find the Difference](https://leetcode.com/problems/find-the-difference/)
+<<<<<<< HEAD
 * [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)
+=======
+* [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/submissions/)
+>>>>>>> 96af6bb63cd8d6d8744e61c436221284533bd57c
 
 
 ## baekjoon
