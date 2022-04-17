@@ -49,6 +49,7 @@
 * [프린터](https://programmers.co.kr/learn/courses/30/lessons/42587)
 * [영어 끝말잇기](https://programmers.co.kr/learn/courses/30/lessons/12981)
 * [행렬의 덧셈](https://programmers.co.kr/learn/courses/30/lessons/12950)
+* [제일 작은 수 제거하기](https://programmers.co.kr/learn/courses/30/lessons/12935)
 
 
 
