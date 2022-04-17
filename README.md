@@ -77,6 +77,7 @@
 * [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)
 * [Is Subsequence](https://leetcode.com/problems/is-subsequence/)
 * [Find the Difference](https://leetcode.com/problems/find-the-difference/)
+* [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)
 
 
 ## baekjoon
