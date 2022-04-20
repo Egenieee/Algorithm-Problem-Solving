@@ -96,3 +96,4 @@
 * [다이얼](https://www.acmicpc.net/problem/5622)
 * [그룹 단어 체커](https://www.acmicpc.net/problem/1316)
 * [크로아티아 알파벳](https://www.acmicpc.net/problem/2941)
+* [벌집](https://www.acmicpc.net/problem/2292)
