@@ -81,6 +81,7 @@
 * [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)
 * [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/submissions/)
 * [Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)
+* [Reverse String](https://leetcode.com/problems/reverse-string/)
 
 
 ## baekjoon
