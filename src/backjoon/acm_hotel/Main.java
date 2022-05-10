@@ -17,9 +17,7 @@ public class Main {
             int roomCount = Integer.parseInt(st.nextToken());
             int customerNumber = Integer.parseInt(st.nextToken());
 
-            String[][] hotel = getHotel(floor, roomCount);
-
-            bw.write(getRoomNumber(hotel, floor, customerNumber) + "\n");
+            bw.write(getRoomNumber(floor, customerNumber) + "\n");
         }
 
         bw.flush();
@@ -27,23 +25,7 @@ public class Main {
 
     }
 
-    private static String[][] getHotel(int floor, int roomCount) {
-        String[][] hotel = new String[floor + 1][roomCount + 1];
-
-        for (int i = 0 ; i < floor + 1 ; i++) {
-            for (int j = 0 ; j < roomCount + 1 ; j++) {
-                if (j + 1 < 10) {
-                    hotel[i][j] = (i + 1) + "0" + (j + 1);
-                } else {
-                    hotel[i][j] = i + 1 + String.valueOf(j + 1);
-                }
-            }
-        }
-
-        return hotel;
-    }
-
-    private static String getRoomNumber(String[][] hotel, int floor, int customerNumber) {
+    private static String getRoomNumber(int floor, int customerNumber) {
         // customerNumber / floor = 몫 ... 나머지
         // 몫 + 1 = 호수
         // 나머지 = 층
@@ -52,9 +34,9 @@ public class Main {
         int roomNumber = customerNumber/ floor;
 
         if (roomFloor == 0) {
-            return hotel[floor - 1][roomNumber - 1];
+            return String.valueOf(floor * 100 + roomNumber);
         }
 
-        return hotel[roomFloor - 1][roomNumber];
+        return String.valueOf(roomFloor * 100 + (roomNumber + 1));
     }
 }
