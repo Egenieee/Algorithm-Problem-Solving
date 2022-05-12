@@ -108,3 +108,4 @@
 * [ACM 호텔](https://www.acmicpc.net/problem/10250)
 * [큰수 A+B](https://www.acmicpc.net/problem/10757)
 * [설탕 배달](https://www.acmicpc.net/problem/2839)
+* [소수 찾기](https://www.acmicpc.net/problem/1978)
