@@ -24,15 +24,19 @@ public class Solution {
     }
 
     public boolean isPrime(int sum) {
+        if (sum <= 1) {
+            return false;
+        }
+
         int divisor = 2;
-        boolean prime = true;
+
         while (sum > divisor) {
             if(sum % divisor == 0) {
-                prime = false;
+                return false;
             }
             divisor++;
         }
 
-        return prime;
+        return true;
     }
 }
