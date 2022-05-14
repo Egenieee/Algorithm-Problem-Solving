@@ -85,6 +85,7 @@
 * [Reverse String](https://leetcode.com/problems/reverse-string/)
 * [Word Pattern](https://leetcode.com/problems/word-pattern/)
 * [Move Zeroes](https://leetcode.com/problems/move-zeroes/)
+* [Add Digits](https://leetcode.com/problems/add-digits/)
 
 
 ## baekjoon
