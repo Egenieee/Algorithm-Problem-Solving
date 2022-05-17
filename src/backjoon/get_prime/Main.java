@@ -35,7 +35,7 @@ public class Main {
         bw.close();
     }
 
-    private static int[] getPrimeArray(int n) {
+    public static int[] getPrimeArray(int n) {
         int[] primes = new int[n + 1];
 
         for (int i = 2; i < primes.length ; i++) {
