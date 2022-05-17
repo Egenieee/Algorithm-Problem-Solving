@@ -113,3 +113,4 @@
 * [소수](https://www.acmicpc.net/problem/2581)
 * [소인수분해](https://www.acmicpc.net/problem/11653)
 * [소수 구하기](https://www.acmicpc.net/problem/1929)
+* [베르트랑 공준](https://www.acmicpc.net/problem/4948)
