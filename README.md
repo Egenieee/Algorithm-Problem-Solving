@@ -116,3 +116,4 @@
 * [베르트랑 공준](https://www.acmicpc.net/problem/4948)
 * [골드바흐의 추측](https://www.acmicpc.net/problem/9020)
 * [팩토리얼](https://www.acmicpc.net/problem/10872)
+* [피보나치 수 5](https://www.acmicpc.net/problem/10870)
