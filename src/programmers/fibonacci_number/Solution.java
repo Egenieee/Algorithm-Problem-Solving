@@ -1,25 +1,31 @@
 package programmers.fibonacci_number;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class Solution {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Solution solution = new Solution();
-        System.out.println(solution.solution(3));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.println(solution.solution(Integer.parseInt(br.readLine())));
     }
 
-    public int solution(int n) {
-
-        return fibonacci(n) % 1234567;
+    public long solution(int n) {
+        return fibonacci(n);
     }
 
-    private int fibonacci(int n) {
-        if (n == 0) {
-            return 0;
+    private long fibonacci(int n) {
+        long[] fibonacciList = new long[100001];
+
+        fibonacciList[0] = 0 % 1234567;
+        fibonacciList[1] = 1 % 1234567;
+
+        for (int i = 2; i <= n; i++) {
+            fibonacciList[i] = (fibonacciList[i - 1] + fibonacciList[i - 2]) % 1234567;
         }
 
-        if (n == 1) {
-            return 1;
-        }
-
-        return fibonacci(n - 1) + fibonacci(n - 2);
+        return fibonacciList[n];
     }
 }
