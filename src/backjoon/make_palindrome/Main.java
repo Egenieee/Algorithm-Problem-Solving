@@ -26,7 +26,7 @@ public class Main {
             alphabets[alphabet - 65]++;
         }
 
-        if (!isPalindrome(input)) {
+        if (cantMakePalindrome()) {
             return "I'm Sorry Hansoo";
         }
 
@@ -37,40 +37,16 @@ public class Main {
         return palindrome(isInputLengthOdd);
     }
 
-    private static boolean isPalindrome(String input) {
-        if (input.length() % 2 == 0) {
-            return evenLengthCheck();
-
-        } else {
-            return oddLengthCheck();
-        }
-    }
-
-    private static boolean oddLengthCheck() {
-        int oddCount = 0;
+    private static boolean cantMakePalindrome() {
+        int count = 0;
 
         for (int alphabet : alphabets) {
-            if (alphabet % 2 != 0) {
-                oddCount++;
+            if (alphabet % 2 == 1) {
+                count++;
             }
         }
 
-        return oddCount == 1;
-    }
-
-    private static boolean evenLengthCheck() {
-        int oddCount = 0;
-        int evenCount = 0;
-
-        for (int alphabet : alphabets) {
-            if ((alphabet != 0) && (alphabet % 2 == 0)) {
-                evenCount++;
-            } else if (alphabet % 2 == 1) {
-                oddCount++;
-            }
-        }
-
-        return (oddCount == 0) && (evenCount > 1);
+        return count > 1;
     }
 
     private static String palindrome(boolean isInputLengthOdd) {
@@ -102,18 +78,18 @@ public class Main {
     }
 
     private static String fillPalindrome(int idxOfAlphabet, int countOfAlphabet) {
-        String answer = "";
+        StringBuilder answer = new StringBuilder();
         int count = 0;
 
         while (count < countOfAlphabet) {
-            if (alphabetsUse[idxOfAlphabet] >= countOfAlphabet) {
-                answer += String.valueOf((char) (idxOfAlphabet + 65));
-                alphabetsUse[idxOfAlphabet]--;
-            }
+
+            answer.append((char) (idxOfAlphabet + 65));
+            alphabetsUse[idxOfAlphabet]--;
+
             count++;
         }
 
-        return answer;
+        return answer.toString();
     }
 
     private static String getMiddleAlphabet() {
