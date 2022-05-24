@@ -120,3 +120,4 @@
 * [피보나치 수 5](https://www.acmicpc.net/problem/10870)
 * [재귀함수가 뭔가요?](https://www.acmicpc.net/problem/17478)
 * [별 찍기 - 10](https://www.acmicpc.net/problem/2447) - 나중에 다시 풀어보기 
+* [팰린드롬 만들기](https://www.acmicpc.net/problem/1213)
