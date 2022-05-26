@@ -125,3 +125,4 @@
 * [수 이어 쓰기](https://www.acmicpc.net/problem/1515)
 * [블랙잭](https://www.acmicpc.net/problem/2798)
 * [스택](https://www.acmicpc.net/problem/10828)
+* [분해합](https://www.acmicpc.net/problem/2231)
