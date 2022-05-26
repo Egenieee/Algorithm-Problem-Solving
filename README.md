@@ -124,3 +124,4 @@
 * [다음 팰린드롬 수](https://www.acmicpc.net/problem/1334) - 실패. 다시 풀기
 * [수 이어 쓰기](https://www.acmicpc.net/problem/1515)
 * [블랙잭](https://www.acmicpc.net/problem/2798)
+* [스택](https://www.acmicpc.net/problem/10828)
