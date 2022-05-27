@@ -126,3 +126,4 @@
 * [블랙잭](https://www.acmicpc.net/problem/2798)
 * [스택](https://www.acmicpc.net/problem/10828)
 * [분해합](https://www.acmicpc.net/problem/2231)
+* [덩치](https://www.acmicpc.net/problem/7568)
