@@ -11,8 +11,11 @@ public class Main {
 
         int row = Integer.parseInt(st.nextToken());
         int column = Integer.parseInt(st.nextToken());
+        int minCount = Integer.MAX_VALUE;
 
         char[][] board = new char[row][column];
+        char[][] blackStartBoard = getBlackBoard();
+        char[][] whiteStartBoard = getWhiteBoard();
 
         for (int i = 0 ; i < row ; i++) {
             String line = br.readLine();
@@ -21,18 +24,13 @@ public class Main {
             }
         }
 
-        int minCount = Integer.MAX_VALUE;
-
         // 체스 판 잘라서 보기
         for (int i = 0 ; i <= row - 8 ; i++) {
             for (int j = 0 ; j <= column - 8 ; j++) {
-                //System.out.println("row : " + i + ", column : " + j);
-                int count = checkBoard(i, j, board);
-                //System.out.println("count : " + count);
+                int count = getRepaintCount(i, j, board, blackStartBoard, whiteStartBoard);
                 if (count < minCount) {
                     minCount = count;
                 }
-                //System.out.println();
             }
         }
 
@@ -42,82 +40,73 @@ public class Main {
     }
 
     // 8*8로 자른 하나의 체스판 확인 -> 칠해야 하는 개수 구하기
-    private static int checkBoard(int rowStart, int columnStart, char[][] board) {
+    // 블랙 버전과 화이트 버전 비교해서 더 적은 거 답으로 내기
 
-        char lastColor = board[rowStart + 7][columnStart + 7];
+    private static int getRepaintCount(int rowStart, int columnStart, char[][] board, char[][] blackStartBoard, char[][] whiteStartBoard) {
+        int blackRepaint = getEachRepaintCount(rowStart, columnStart, board, blackStartBoard);
+        int whiteRepaint = getEachRepaintCount(rowStart, columnStart, board, whiteStartBoard);
 
-        //System.out.println("lastColor : " + lastColor);
-
-        if (lastColor == 'B') {
-            return blackFirstBoard(rowStart, columnStart, board);
-        }
-
-        return whiteFirstBoard(rowStart, columnStart, board);
+        return Math.min(blackRepaint, whiteRepaint);
     }
 
-    private static int blackFirstBoard(int rowStart, int columnStart, char[][] board) {
+    private static int getEachRepaintCount(int rowStart, int columnStart, char[][] board, char[][] answerBoard) {
         int repaint = 0;
 
-        for (int i = rowStart, rowIdx = 0 ; i < rowStart + 8 ; i++, rowIdx++) {
-            int count = 0;
-            for (int j = columnStart, columnIdx = 0 ; j < columnStart + 8 ; j++, columnIdx++) {
-                //System.out.print(board[i][j]);
-                if (rowIdx % 2 == 0 && columnIdx % 2 == 0) {
-                    if (board[i][j] != 'B') {
-                        count++;
-                    }
-                } else if (rowIdx % 2 == 0 && columnIdx % 2 == 1) {
-                    if (board[i][j] != 'W') {
-                        count++;
-                    }
-                } else if (rowIdx % 2 == 1 && columnIdx % 2 == 0) {
-                    if (board[i][j] != 'W') {
-                        count++;
-                    }
-                } else if (rowIdx % 2 == 1 && columnIdx % 2 == 1) {
-                    if (board[i][j] != 'B') {
-                        count++;
-                    }
+        for (int i = rowStart, answerRowIdx = 0; i < rowStart + 8 ; i++, answerRowIdx++) {
+            for (int j = columnStart, answerColumnIdx = 0; j < columnStart + 8 ; j++, answerColumnIdx++) {
+                if (answerBoard[answerRowIdx][answerColumnIdx] != board[i][j]) {
+                    repaint++;
                 }
             }
-            //System.out.print(" " + count);
-            repaint += count;
-            //System.out.println();
         }
-
         return repaint;
     }
 
-    private static int whiteFirstBoard(int rowStart, int columnStart, char[][] board) {
-        int repaint = 0;
+    private static char[][] getBlackBoard() {
+        char[][] answerBoard = new char[8][8];
 
-        for (int i = rowStart, rowIdx = 0 ; i < rowStart + 8 ; i++, rowIdx++) {
-            int count = 0;
-            for (int j = columnStart, columnIdx = 0 ; j < columnStart + 8 ; j++, columnIdx++) {
-                //System.out.print(board[i][j]);
-                if (rowIdx % 2 == 0 && columnIdx % 2 == 0) {
-                    if (board[i][j] != 'W') {
-                        count++;
+        for (int i = 0 ; i < 8 ; i++) {
+            for (int j = 0 ; j < 8 ; j++) {
+                if (i % 2 == 0) {
+                    if (j % 2 == 0) {
+                        answerBoard[i][j] = 'B';
+                    } else {
+                        answerBoard[i][j] = 'W';
                     }
-                } else if (rowIdx % 2 == 0 && columnIdx % 2 == 1) {
-                    if (board[i][j] != 'B') {
-                        count++;
-                    }
-                } else if (rowIdx % 2 == 1 && columnIdx % 2 == 0) {
-                    if (board[i][j] != 'B') {
-                        count++;
-                    }
-                } else if (rowIdx % 2 == 1 && columnIdx % 2 == 1) {
-                    if (board[i][j] != 'W') {
-                        count++;
+                } else {
+                    if (j % 2 == 0) {
+                        answerBoard[i][j] = 'W';
+                    } else {
+                        answerBoard[i][j] = 'B';
                     }
                 }
             }
-            //System.out.print(" " + count);
-            repaint += count;
-            //System.out.println();
         }
 
-        return repaint;
+        return answerBoard;
+    }
+
+    private static char[][] getWhiteBoard() {
+        char[][] answerBoard = new char[8][8];
+
+        for (int i = 0 ; i < 8 ; i++) {
+            for (int j = 0 ; j < 8 ; j++) {
+                if (i % 2 == 0) {
+                    if (j % 2 == 0) {
+                        answerBoard[i][j] = 'W';
+                    } else {
+                        answerBoard[i][j] = 'B';
+                    }
+                } else {
+                    if (j % 2 == 0) {
+                        answerBoard[i][j] = 'B';
+                    } else {
+                        answerBoard[i][j] = 'W';
+                    }
+                }
+            }
+        }
+
+        return answerBoard;
     }
 }
