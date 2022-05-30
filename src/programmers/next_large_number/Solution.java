@@ -20,15 +20,11 @@ public class Solution {
     public int solution(int n) {
         int plus = 1;
         int largeNumber;
-        String inputToBinary;
-        String outputToBinary;
 
         while (true) {
-            inputToBinary = Integer.toBinaryString(n);
             largeNumber = n + plus;
-            outputToBinary = Integer.toBinaryString(largeNumber);
 
-            if (isSameOneCount(inputToBinary, outputToBinary)) {
+            if (isSameOneCount(n, largeNumber)) {
                 break;
             }
 
@@ -38,29 +34,7 @@ public class Solution {
         return largeNumber;
     }
 
-    private boolean isSameOneCount(String inputToBinary, String outputToBinary) {
-        int inputOneCount = 0;
-        int outputOneCount = 0;
-        int idxOfInput = 0;
-        int idxOfOutput = 0;
-
-        while(idxOfInput < inputToBinary.length() || idxOfOutput < outputToBinary.length()) {
-            if (idxOfInput < inputToBinary.length()) {
-                if (inputToBinary.charAt(idxOfInput) == '1') {
-                    inputOneCount++;
-                }
-            }
-
-            if (idxOfOutput < outputToBinary.length()) {
-                if(outputToBinary.charAt(idxOfOutput) == '1') {
-                    outputOneCount++;
-                }
-            }
-
-            idxOfInput++;
-            idxOfOutput++;
-        }
-
-        return inputOneCount == outputOneCount;
+    private boolean isSameOneCount(int n, int largerNumber) {
+        return Integer.bitCount(n) == Integer.bitCount(largerNumber);
     }
 }
