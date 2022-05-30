@@ -1,40 +1,39 @@
 package programmers.pair_to_remove;
 
+import java.util.Stack;
+
 public class Solution {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.solution("abbbabbb"));
+        System.out.println(solution.solution("cvv"));
     }
+
+    // ArrayList -> 정확도 통과, 효율성 통과x
+    // String replace -> 정확도 통과, 효율성 통과x
+    // Stack -> 정확도 통과, 효율성 통과
+
     public int solution(String s) {
-        String input = s;
+        Stack<Character> stack = new Stack<>();
+        int pointer = 0;
 
-        while (true) {
-            input = removeOneStep(input);
-            if (input.length() == 0) {
-                return 1;
-            }
-            if (input.equals("0")) {
-                return 0;
-            }
-        }
-    }
-
-    private String removeOneStep(String s) {
-        int idxOfCompare = 0;
-        char compare = s.charAt(0);
-
-        for (int i = 1 ; i < s.length() ; i++) {
-            if (s.charAt(i) == (compare)) {
-                String pattern = String.valueOf(compare).repeat(2);
-                s = s.replace(pattern, "");
-                return s;
+        while (pointer != s.length()) {
+            if (stack.empty()) {
+                stack.push(s.charAt(pointer));
             } else {
-                idxOfCompare++;
+                if (stack.peek() == s.charAt(pointer)) {
+                    stack.pop();
+                } else {
+                    stack.push(s.charAt(pointer));
+                }
             }
 
-            compare = s.charAt(idxOfCompare);
+            pointer++;
         }
 
-        return "0";
+        if (stack.empty()) {
+            return 1;
+        }
+
+        return 0;
     }
 }
