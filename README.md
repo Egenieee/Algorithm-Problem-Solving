@@ -132,3 +132,4 @@
 * [덩치](https://www.acmicpc.net/problem/7568)
 * [체스판 다시 칠하기](https://www.acmicpc.net/problem/1018)
 * [영화감독 숌](https://www.acmicpc.net/problem/1436)
+* [수 정렬하기](https://www.acmicpc.net/problem/2750)
