@@ -1,54 +1,40 @@
 package programmers.pair_to_remove;
 
-import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
 public class Solution {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.solution("cbbbbdggdc"));
+        System.out.println(solution.solution("abbbabbb"));
     }
     public int solution(String s) {
-        int loopCount = s.length();
-        boolean isRemoved;
-        List<String> words = getWords(s);
+        String input = s;
 
-        for (int i = 0 ; i < loopCount ; i++) {
-            isRemoved = removeOneStep(words);
-            if (!isRemoved || words.size() == 1) {
-                return 0;
-            }
-            if (words.size() == 0) {
+        while (true) {
+            input = removeOneStep(input);
+            if (input.length() == 0) {
                 return 1;
             }
+            if (input.equals("0")) {
+                return 0;
+            }
         }
-
-        return 0;
     }
 
-    private boolean removeOneStep(List<String> words) {
+    private String removeOneStep(String s) {
         int idxOfCompare = 0;
-        String compare = words.get(0);
+        char compare = s.charAt(0);
 
-        for (int i = 1 ; i < words.size() ; i++) {
-            if (words.get(i).equals(compare)) {
-                words.remove(idxOfCompare);
-                words.remove(idxOfCompare);
-                return true;
+        for (int i = 1 ; i < s.length() ; i++) {
+            if (s.charAt(i) == (compare)) {
+                String pattern = String.valueOf(compare).repeat(2);
+                s = s.replace(pattern, "");
+                return s;
             } else {
                 idxOfCompare++;
             }
 
-            compare = words.get(idxOfCompare);
+            compare = s.charAt(idxOfCompare);
         }
 
-        return false;
-    }
-
-    private List<String> getWords(String s) {
-        String[] word = s.split("");
-
-        return Stream.of(word).collect(Collectors.toList());
+        return "0";
     }
 }
