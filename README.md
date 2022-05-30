@@ -53,6 +53,7 @@
 * [최댓값과 최솟값](https://programmers.co.kr/learn/courses/30/lessons/12939)
 * [피보나치 수](https://programmers.co.kr/learn/courses/30/lessons/12945)
 * [다음 큰 숫자](https://programmers.co.kr/learn/courses/30/lessons/12911)
+* [짝지어 제거하기](https://programmers.co.kr/learn/courses/30/lessons/12973)
 
 
 
