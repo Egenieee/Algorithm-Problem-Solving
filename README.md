@@ -54,6 +54,7 @@
 * [피보나치 수](https://programmers.co.kr/learn/courses/30/lessons/12945)
 * [다음 큰 숫자](https://programmers.co.kr/learn/courses/30/lessons/12911)
 * [짝지어 제거하기](https://programmers.co.kr/learn/courses/30/lessons/12973)
+* [K번째수](https://programmers.co.kr/learn/courses/30/lessons/42748)
 
 
 
