@@ -4,13 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Solution {
-    int[][] keypads = getKeypads();
     Hand leftHand = new Hand(3, 0);
     Hand rightHand = new Hand(3, 2);
 
+    // RLRLRLLRRLL
+
     public static void main(String[] args) {
         Solution solution = new Solution();
-        String answer = solution.solution(new int[]{7, 0, 8, 2, 8, 3, 1, 5, 7, 6, 2}, "left");
+        String answer = solution.solution(new int[]{0, 1, 0, 2, 3, 2, 0, 2, 3, 0, 4}, "right");
         System.out.println(answer);
     }
     public String solution(int[] numbers, String hand) {
@@ -25,8 +26,7 @@ public class Solution {
                 answer.append("R");
                 rightHand.changeHand(getHandCoordinates(number));
             } else { // 2470인 경우 더 가까운 손가락으로 누르되, 거리 같다면, 잡이 따짐
-                String pushingHand = getPushingHand(number, hand);
-                answer.append(pushingHand);
+                answer.append(getPushingHand(number, hand));
             }
         }
 
@@ -34,42 +34,48 @@ public class Solution {
     }
 
     private String getPushingHand(int number, String hand) {
-        int leftHandDistance = leftHand.getDistanceFromKey(getHandCoordinates(number));
-        int rightHandDistance = rightHand.getDistanceFromKey(getHandCoordinates(number));
+        List<Integer> coordinates = getHandCoordinates(number);
+
+        int leftHandDistance = leftHand.getDistanceFromKey(coordinates);
+        int rightHandDistance = rightHand.getDistanceFromKey(coordinates);
 
         if (leftHandDistance < rightHandDistance) {
-            leftHand.changeHand(getHandCoordinates(number));
+            leftHand.changeHand(coordinates);
             return "L";
         }
 
         if (leftHandDistance > rightHandDistance) {
-            rightHand.changeHand(getHandCoordinates(number));
+            rightHand.changeHand(coordinates);
             return "R";
         }
 
         if (hand.equals("right")) {
-            rightHand.changeHand(getHandCoordinates(number));
+            rightHand.changeHand(coordinates);
             return "R";
         }
 
-        leftHand.changeHand(getHandCoordinates(number));
+        leftHand.changeHand(coordinates);
         return "L";
     }
+
+    // 1    2   3   [0,0]   [0,1]   [0,2]
+    // 4    5   6   [1,0]   [1,1]   [1,2]
+    // 7    8   9   [2,0]   [2,1]   [2,2]
+    // *    0   #   [3,0]   [3,1]   [3,2]
 
     private List<Integer> getHandCoordinates(int number) {
         List<Integer> coordinates = new ArrayList<>();
 
-        for (int i = 0 ; i < keypads.length ; i++) {
-            for (int j = 0 ; j < keypads[0].length ; j++) {
-                if (keypads[i][j] == number) {
-                    coordinates.add(i);
-                    coordinates.add(j);
-                    return coordinates;
-                }
-            }
+        if (number == 0) {
+            coordinates.add(3);
+            coordinates.add(1);
+            return coordinates;
         }
 
-        return null;
+        coordinates.add((number - 1) / 3); // x 좌표
+        coordinates.add((number - 1) % 3); // y 좌표
+
+        return coordinates;
     }
 
     public class Hand {
@@ -92,26 +98,6 @@ public class Solution {
 
             return Math.abs(x - targetNumberX) + Math.abs(y - targetNumberY);
         }
-
-    }
-
-    private static int[][] getKeypads() {
-        int[][] keypads = new int[4][3];
-
-        int number = 1;
-
-        for (int i = 0 ; i < 3 ; i++) {
-            for (int j = 0 ; j < 3 ; j++) {
-                keypads[i][j] = number;
-                number++;
-            }
-        }
-
-        keypads[3][0] = -1;
-        keypads[3][1] = 0;
-        keypads[3][2] = -1;
-
-        return keypads;
     }
 }
 
