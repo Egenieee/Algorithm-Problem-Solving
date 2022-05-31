@@ -18,45 +18,8 @@ package programmers.rank_search;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Solution {
-    class Applicant {
-        private String language;
-        private String job;
-        private String career;
-        private String soulFood;
-
-        private int score;
-
-        public Applicant(String language, String job, String career, String soulFood, int score) {
-            this.language = language;
-            this.job = job;
-            this.career = career;
-            this.soulFood = soulFood;
-            this.score = score;
-        }
-
-        public String getLanguage() {
-            return language;
-        }
-
-        public String getJob() {
-            return job;
-        }
-
-        public String getCareer() {
-            return career;
-        }
-
-        public String getSoulFood() {
-            return soulFood;
-        }
-
-        public int getScore() {
-            return score;
-        }
-    }
     public static void main(String[] args) {
         Solution solution = new Solution();
         List<Integer> result = solution.solution(new String[]{"java backend junior pizza 150",
@@ -69,63 +32,73 @@ public class Solution {
         System.out.println(result);
     }
     public List<Integer> solution(String[] info, String[] query) {
-        // 지원자 객체 생성
-        List<Applicant> applicants = new ArrayList<>();
-        createApplicants(applicants, info);
+        String[][] infos = getInfos(info);
+        String[][] queries = getQueries(query);
 
-        // 조건 검색
-        List<Integer> answer = search(applicants, query);
-
-        return answer;
-    }
-    private void createApplicants(List<Applicant> applicants, String[] info) {
-        for (String oneInfo : info) {
-            String[] oneInfos = oneInfo.split(" ");
-
-            applicants.add(new Applicant(oneInfos[0], oneInfos[1],
-                    oneInfos[2], oneInfos[3], Integer.parseInt(oneInfos[4])));
-        }
-    }
-    private List<Integer> search(List<Applicant> applicants, String[] query) {
         List<Integer> answer = new ArrayList<>();
 
-        // 쿼리 하나씩 보면서 조건 검색
-        // conditions[0] = language, condition[2] = job, conditions[4] = career
-        // conditions[6] = soulFood, conditions[7] = score
-
-        for (String condition : query) {
-            String[] conditions = condition.split(" ");
-
-            List<Applicant> searched = applicants.stream()
-                    .filter(applicant -> {
-                        if(!conditions[0].equals("-")) {
-                            return applicant.getLanguage().equals(conditions[0]);
-                        }
-                        return true;
-                    })
-                    .filter(applicant -> {
-                        if(!conditions[2].equals("-")) {
-                            return applicant.getJob().equals(conditions[2]);
-                        }
-                        return true;
-                    })
-                    .filter(applicant -> {
-                        if(!conditions[4].equals("-")) {
-                            return applicant.getCareer().equals(conditions[4]);
-                        }
-                        return true;
-                    })
-                    .filter(applicant -> {
-                        if(!conditions[6].equals("-")) {
-                            return applicant.getSoulFood().equals(conditions[6]);
-                        }
-                        return true;
-                    })
-                    .filter(applicant -> applicant.getScore() >= Integer.parseInt(conditions[7]))
-                    .collect(Collectors.toList());
-
-            answer.add(searched.size());
+        for (String[] eachQuery : queries) {
+            answer.add(getCountOfMatch(eachQuery, infos));
         }
+
         return answer;
     }
+
+    private int getCountOfMatch(String[] eachQuery, String[][] infos) {
+        int countOfMatch = 0;
+        int count;
+
+        for (String[] info : infos) {
+            count = 0;
+            if (eachQuery[0].equals(info[0]) || eachQuery[0].equals("-")) {
+                count++;
+            }
+            if (eachQuery[1].equals(info[1]) || eachQuery[1].equals("-")) {
+                count++;
+            }
+            if (eachQuery[2].equals(info[2]) || eachQuery[2].equals("-")) {
+                count++;
+            }
+            if (eachQuery[3].equals(info[3]) || eachQuery[3].equals("-")) {
+                count++;
+            }
+            if (Integer.parseInt(info[4]) >= Integer.parseInt(eachQuery[4]) || eachQuery[4].equals("-")) {
+                count++;
+            }
+
+            if (count == 5) {
+                countOfMatch++;
+            }
+        }
+
+        return countOfMatch;
+    }
+
+    private String[][] getInfos(String[] info) {
+        String[][] infos = new String[info.length][5];
+
+        for (int i = 0 ; i < info.length ; i++) {
+            infos[i] = info[i].split(" ");
+        }
+
+        return infos;
+    }
+
+    private String[][] getQueries(String[] query) {
+        String[][] queries = new String[query.length][5];
+
+        for (int i = 0 ; i < query.length ; i++) {
+            int pointer = 0;
+            String[] temp = query[i].split(" ");
+            for (int j = 0 ; j < temp.length ; j++) {
+                if (j == 7 || j % 2 != 1) {
+                    queries[i][pointer] = temp[j];
+                    pointer++;
+                }
+            }
+        }
+
+        return queries;
+    }
+
 }
