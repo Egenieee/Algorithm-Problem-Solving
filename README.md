@@ -33,7 +33,6 @@
 * [문자열 내 마음대로 정렬하기](https://programmers.co.kr/learn/courses/30/lessons/12915)
 * [소수 찾기](https://programmers.co.kr/learn/courses/30/lessons/12921)
 * [문자열 내 p와 y의 개수](https://programmers.co.kr/learn/courses/30/lessons/12916)
-* [메뉴 리뉴얼](https://programmers.co.kr/learn/courses/30/lessons/72411) - 정확도 20% 다시 풀어보기
 * [행렬의 덧셈](https://programmers.co.kr/learn/courses/30/lessons/12950)
 * [제일 작은 수 제거하기](https://programmers.co.kr/learn/courses/30/lessons/12935)
 * [K번째수](https://programmers.co.kr/learn/courses/30/lessons/42748)
@@ -54,6 +53,7 @@
 * [프린터](https://programmers.co.kr/learn/courses/30/lessons/42587)
 * [전화번호 목록](https://programmers.co.kr/learn/courses/30/lessons/42577)
 * [튜플](https://programmers.co.kr/learn/courses/30/lessons/64065)
+* [메뉴 리뉴얼](https://programmers.co.kr/learn/courses/30/lessons/72411) - 정확도 20% 다시 풀어보기
 * [괄호 변환](https://programmers.co.kr/learn/courses/30/lessons/60058)
 * [짝지어 제거하기](https://programmers.co.kr/learn/courses/30/lessons/12973)
 * [오픈채팅방](https://programmers.co.kr/learn/courses/30/lessons/42888)
