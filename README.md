@@ -2,63 +2,68 @@
 #### 알고리즘 문제 풀이
 
 ## programmers
+### Level 1
 * [문자열 다루기 기본](https://programmers.co.kr/learn/courses/30/lessons/12918)   
 * [없는 숫자 더하기](https://programmers.co.kr/learn/courses/30/lessons/86051)
 * [수박수박수박수박수박수?](https://programmers.co.kr/learn/courses/30/lessons/12922)   
 * [나머지가 1이 되는 수 찾기](https://programmers.co.kr/learn/courses/30/lessons/87389)   
 * [2016년](https://programmers.co.kr/learn/courses/30/lessons/87389)
 * [두 개 뽑아서 더하기](https://programmers.co.kr/learn/courses/30/lessons/68644)
-* [튜플](https://programmers.co.kr/learn/courses/30/lessons/64065)
 * [신고 결과 받기](https://programmers.co.kr/learn/courses/30/lessons/92334)
 * [숫자 문자열과 영단어](https://programmers.co.kr/learn/courses/30/lessons/81301)
 * [완주하지 못한 선수](https://programmers.co.kr/learn/courses/30/lessons/42576)
-* [가장 큰 수](https://programmers.co.kr/learn/courses/30/lessons/42746)
 * [소수 만들기](https://programmers.co.kr/learn/courses/30/lessons/12977)
-* [전화번호 목록](https://programmers.co.kr/learn/courses/30/lessons/42577)
 * [예산](https://programmers.co.kr/learn/courses/30/lessons/12982)
 * [로또의 최고 순위와 최저 순위](https://programmers.co.kr/learn/courses/30/lessons/77484)
 * [신규 아이디 추천](https://programmers.co.kr/learn/courses/30/lessons/72410)
-* [오픈채팅방](https://programmers.co.kr/learn/courses/30/lessons/42888)
-* [문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057)
 * [실패율](https://programmers.co.kr/learn/courses/30/lessons/42889)
 * [폰켓몬](https://programmers.co.kr/learn/courses/30/lessons/1845)
 * [비밀지도](https://programmers.co.kr/learn/courses/30/lessons/17681)
 * [크레인 인형뽑기 게임](https://programmers.co.kr/learn/courses/30/lessons/64061)
 * [시저 암호](https://programmers.co.kr/learn/courses/30/lessons/12926)
 * [이상한 문자 만들기](https://programmers.co.kr/learn/courses/30/lessons/12930)
-* [주식가격](https://programmers.co.kr/learn/courses/30/lessons/42584)
 * [부족한 금액 계산하기](https://programmers.co.kr/learn/courses/30/lessons/82612)
 * [핸드폰 번호 가리기](https://programmers.co.kr/learn/courses/30/lessons/12948)
-* [주차 요금 계산](https://programmers.co.kr/learn/courses/30/lessons/92341)
-* [캐시](https://programmers.co.kr/learn/courses/30/lessons/17680)
-* [JadenCase 문자열 만들기](https://programmers.co.kr/learn/courses/30/lessons/12951/questions)
-* [이진 변환 반복하기](https://programmers.co.kr/learn/courses/30/lessons/70129)
 * [하샤드 수](https://programmers.co.kr/learn/courses/30/lessons/12947)
 * [모의고사](https://programmers.co.kr/learn/courses/30/lessons/42840)
 * [약수의 개수와 덧셈](https://programmers.co.kr/learn/courses/30/lessons/77884)
-* [위장](https://programmers.co.kr/learn/courses/30/lessons/42578)
-* [최솟값 만들기](https://programmers.co.kr/learn/courses/30/lessons/12941)
 * [3진법 뒤집기](https://programmers.co.kr/learn/courses/30/lessons/68935)
 * [콜라츠 추측](https://programmers.co.kr/learn/courses/30/lessons/12943)
 * [두 정수 사이의 합](https://programmers.co.kr/learn/courses/30/lessons/12912)
 * [문자열 내 마음대로 정렬하기](https://programmers.co.kr/learn/courses/30/lessons/12915)
-* [베스트앨범](https://programmers.co.kr/learn/courses/30/lessons/42579)
 * [소수 찾기](https://programmers.co.kr/learn/courses/30/lessons/12921)
 * [문자열 내 p와 y의 개수](https://programmers.co.kr/learn/courses/30/lessons/12916)
 * [메뉴 리뉴얼](https://programmers.co.kr/learn/courses/30/lessons/72411) - 정확도 20% 다시 풀어보기
-* [프린터](https://programmers.co.kr/learn/courses/30/lessons/42587)
-* [영어 끝말잇기](https://programmers.co.kr/learn/courses/30/lessons/12981)
 * [행렬의 덧셈](https://programmers.co.kr/learn/courses/30/lessons/12950)
 * [제일 작은 수 제거하기](https://programmers.co.kr/learn/courses/30/lessons/12935)
-* [최댓값과 최솟값](https://programmers.co.kr/learn/courses/30/lessons/12939)
-* [피보나치 수](https://programmers.co.kr/learn/courses/30/lessons/12945)
-* [다음 큰 숫자](https://programmers.co.kr/learn/courses/30/lessons/12911)
-* [짝지어 제거하기](https://programmers.co.kr/learn/courses/30/lessons/12973)
 * [K번째수](https://programmers.co.kr/learn/courses/30/lessons/42748)
 * [키패드 누르기](https://programmers.co.kr/learn/courses/30/lessons/67256)
+
+### Level 2
+* [JadenCase 문자열 만들기](https://programmers.co.kr/learn/courses/30/lessons/12951/questions)
+* [피보나치 수](https://programmers.co.kr/learn/courses/30/lessons/12945)
+* [최솟값 만들기](https://programmers.co.kr/learn/courses/30/lessons/12941)
+* [주차 요금 계산](https://programmers.co.kr/learn/courses/30/lessons/92341)
+* [다음 큰 숫자](https://programmers.co.kr/learn/courses/30/lessons/12911)
+* [이진 변환 반복하기](https://programmers.co.kr/learn/courses/30/lessons/70129)
+* [캐시](https://programmers.co.kr/learn/courses/30/lessons/17680)
+* [주식가격](https://programmers.co.kr/learn/courses/30/lessons/42584)
+* [영어 끝말잇기](https://programmers.co.kr/learn/courses/30/lessons/12981)
+* [위장](https://programmers.co.kr/learn/courses/30/lessons/42578)
+* [가장 큰 수](https://programmers.co.kr/learn/courses/30/lessons/42746)
+* [프린터](https://programmers.co.kr/learn/courses/30/lessons/42587)
+* [전화번호 목록](https://programmers.co.kr/learn/courses/30/lessons/42577)
+* [튜플](https://programmers.co.kr/learn/courses/30/lessons/64065)
 * [괄호 변환](https://programmers.co.kr/learn/courses/30/lessons/60058)
+* [짝지어 제거하기](https://programmers.co.kr/learn/courses/30/lessons/12973)
+* [오픈채팅방](https://programmers.co.kr/learn/courses/30/lessons/42888)
+* [문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057)
+* [최댓값과 최솟값](https://programmers.co.kr/learn/courses/30/lessons/12939)
 
+### Level 3
+* [베스트앨범](https://programmers.co.kr/learn/courses/30/lessons/42579)
 
+-----
 
 ## leetcode
 * [Number of Strings That Appear as Substrings in Word](https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/)
@@ -93,6 +98,7 @@
 * [Move Zeroes](https://leetcode.com/problems/move-zeroes/)
 * [Add Digits](https://leetcode.com/problems/add-digits/)
 
+-----
 
 ## baekjoon
 * [알파벳 찾기](https://www.acmicpc.net/problem/10809)
