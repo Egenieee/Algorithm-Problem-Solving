@@ -59,6 +59,7 @@
 * [오픈채팅방](https://programmers.co.kr/learn/courses/30/lessons/42888)
 * [문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057)
 * [최댓값과 최솟값](https://programmers.co.kr/learn/courses/30/lessons/12939)
+* [기능 개발](https://programmers.co.kr/learn/courses/30/lessons/42586)
 
 ### Level 3
 * [베스트앨범](https://programmers.co.kr/learn/courses/30/lessons/42579)
