@@ -53,7 +53,7 @@
 * [프린터](https://programmers.co.kr/learn/courses/30/lessons/42587)
 * [전화번호 목록](https://programmers.co.kr/learn/courses/30/lessons/42577)
 * [튜플](https://programmers.co.kr/learn/courses/30/lessons/64065)
-* [메뉴 리뉴얼](https://programmers.co.kr/learn/courses/30/lessons/72411) - 정확도 20% 다시 풀어보기
+* [메뉴 리뉴얼](https://programmers.co.kr/learn/courses/30/lessons/72411)
 * [괄호 변환](https://programmers.co.kr/learn/courses/30/lessons/60058)
 * [짝지어 제거하기](https://programmers.co.kr/learn/courses/30/lessons/12973)
 * [오픈채팅방](https://programmers.co.kr/learn/courses/30/lessons/42888)
