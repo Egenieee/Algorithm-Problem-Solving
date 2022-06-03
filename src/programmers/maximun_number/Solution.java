@@ -1,6 +1,8 @@
 package programmers.maximun_number;
 
 import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class Solution {
     public static void main(String[] args) {
@@ -8,23 +10,21 @@ public class Solution {
         System.out.println(solution.solution(new int[] {3, 30, 34, 5, 9}));
     }
     public String solution(int[] numbers) {
-        String answer = "";
-        String[] strings = new String[numbers.length];
+        List<String> sortedNumbers = Arrays.stream(numbers)
+                .mapToObj(String::valueOf)
+                .sorted((a, b) -> (b + a).compareTo(a + b))
+                .collect(Collectors.toList());
 
-        for(int i = 0 ; i < strings.length ; i++) {
-            strings[i] = String.valueOf(numbers[i]);
-        }
+        //문자열 정렬 하되, 합친 문자열 비교 해보고 순서 바꿈
 
-        if(strings[0].equals("0")) {
+        if(sortedNumbers.get(0).equals("0")) {
             return "0";
         }
 
-        Arrays.sort(strings, (s, t1) -> (t1 + s).compareTo(s + t1)); //문자열 정렬 하되, 합친 문자열 비교 해보고 순서 바꿈
+        StringBuilder answer = new StringBuilder();
 
-        for(String num : strings) {
-            answer += num;
-        }
+        sortedNumbers.forEach(answer::append);
 
-        return answer;
+        return answer.toString();
     }
 }
