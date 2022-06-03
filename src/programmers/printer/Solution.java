@@ -3,13 +3,11 @@ package programmers.printer;
 // priorities [2, 1, 3, 2] location 2 return 1
 // 확인 -> 뒤로 넘기거나, -> 프린트하거나
 
-// <0, 2> <1, 1> <2, 3> <3, 2> -> pair 이용
-// <2, 3> <3, 2> <0, 2> <1, 1>
+// <0, 2> <1, 1> <2, 3> <3, 2> -> pair 이용해서 인덱스와 중요도 함께 저장. (Deque 이용)
+// <2, 3> <3, 2> <0, 2> <1, 1> -> pair 이용해서 프린트하는 순서 저장. (List 이용)
 
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Deque;
-import java.util.List;
+import java.util.*;
+import java.util.stream.IntStream;
 
 public class Solution {
     static class Pair {
@@ -43,54 +41,44 @@ public class Solution {
         List<Pair> printOrder = new ArrayList<>();
 
         // get importance
-        int importance;
+        int maxImportance;
 
         while (!docs.isEmpty()) {
-            importance = getImportance(docs);
+            maxImportance = getImportance(docs);
 
-            Pair pair = docs.pop();
+            Pair doc = docs.pop();
 
-            int doc = pair.getPriority();
-            // check
-
-            if (doc < importance) {
-                docs.add(pair);
+            if (doc.getPriority() < maxImportance) {
+                docs.add(doc);
             } else {
-                printOrder.add(pair);
+                printOrder.add(doc);
             }
         }
 
-        answer = getAnswer(printOrder, location);
+        answer = getOrder(printOrder, location);
 
         return answer;
     }
 
     private Deque<Pair> getDocsQueue(int[] priorities) {
         Deque<Pair> queue = new ArrayDeque<>();
-
-        for (int i = 0; i < priorities.length; i++) {
-            Pair pair = new Pair(i, priorities[i]);
-            queue.add(pair);
-        }
+        IntStream.range(0, priorities.length)
+                .forEach(i -> queue.add(new Pair(i, priorities[i])));
 
         return queue;
     }
 
 
     private int getImportance(Deque<Pair> prioritiesPairs) {
-        int max = Integer.MIN_VALUE;
+        Pair maxPriorityPair = prioritiesPairs
+                .stream()
+                .max(Comparator.comparing(Pair::getPriority))
+                .orElseThrow(NoSuchElementException::new);
 
-        for (Pair pair : prioritiesPairs) {
-            int priority = pair.getPriority();
-            if (priority > max) {
-                max = priority;
-            }
-        }
-
-        return max;
+        return maxPriorityPair.getPriority();
     }
 
-    private int getAnswer(List<Pair> printOrder, int location) {
+    private int getOrder(List<Pair> printOrder, int location) {
         for (int i = 0; i < printOrder.size(); i++) {
             Pair pair = printOrder.get(i);
 
