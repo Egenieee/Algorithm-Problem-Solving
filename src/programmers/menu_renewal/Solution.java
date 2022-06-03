@@ -1,141 +1,134 @@
 package programmers.menu_renewal;
 
 import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 //["ABCFG", "AC", "CDE", "ACDE", "BCFG", "ACDEH"]	[2,3,4]	["AC", "ACDE", "BCFG", "CDE"]
 //["ABCDE", "AB", "CD", "ADE", "XYZ", "XYZ", "ACD"]	[2,3,5]	["ACD", "AD", "ADE", "CD", "XYZ"]
 //["XYZ", "XWY", "WXA"]	[2,3,4]	["WX", "XY"]
 
+// 한 사람이 주문한 메뉴가지고 코스 개수로 가능한 조합 만들어서 조합 카운팅하기.
+// 2명 이상이 시킨 메뉴에 있으면 정렬해서 맵에 메뉴, 시킨 횟수로 담기
+// 다 넣은 뒤엔 메뉴 개수(course)에 따라 가장 많이 시킨 세트만 골라내야한다.
+// 하지만, 같은 횟수로 가장 많이 시킨 세트라면 다 담자.
+
 public class Solution {
+    Map<String, Integer> menusFrequency = new HashMap<>();
+
     public static void main(String[] args) {
         Solution solution = new Solution();
-        List<String> answer = solution.solution(new String[] {"ABCDE", "AB", "CD", "ADE", "XYZ", "XYZ", "ACD"}, new int[]{2, 3, 5});
+        List<String> answer = solution.solution(new String[] {"XYZ", "XWY", "WXA"}, new int[]{2,3,4});
         for (String menu : answer) {
             System.out.println(menu);
         }
     }
     public List<String> solution(String[] orders, int[] course) {
-        List<Integer> courseNumber = toIntegerList(course);
+        // 한 사람이 시킨 메뉴 마다 가능한 음식 조합 구해서 카운팅
+        for (String order : orders) {
+            String sortedOrder = getSortedOrder(order);
+            countMenuCombination(sortedOrder, course);
+        }
 
-        // 2번 이상 시킨 세트 메뉴들 Set에 저장
-        Set<String> setMenu = new HashSet<>();
+        // 맵에서 코스 크기에 맞는 조합 세트 중에서 가장 많이 주문된 세트의 주문횟수 구하기
+        List<Integer> maxOrderCount = getMaxOrderCount(course);
 
-        for (int i = 0 ; i < orders.length ; i++) {
-            List<String> standardOrder = toList(orders[i]);
+        // 코스마다 가장 많이 주문된 주문 횟수 만큼의 주문된 세트 메뉴만 뽑기
+        return getSetMenus(maxOrderCount, course);
+    }
 
-            for (int j = i + 1 ; j < orders.length ; j++) {
-                List<String> counterpartOrder = toList(orders[j]);
+    private String getSortedOrder(String order) {
+        char[] stringToChar = order.toCharArray();
+        Arrays.sort(stringToChar);
+        return new String(stringToChar);
+    }
 
-                standardOrder.retainAll(counterpartOrder);
+    private void countMenuCombination(String order, int[] course) {
+        List<String> menuList = IntStream.range(0, order.length())
+                .mapToObj(i -> String.valueOf(order.charAt(i)))
+                .collect(Collectors.toList());
 
-                if (courseNumber.contains(standardOrder.size())) {
-                    String menu = getSetMenu(standardOrder);
-                    setMenu.add(menu);
+        getCombination(menuList, course);
+    }
+
+    private void getCombination(List<String> order, int[] course) {
+        boolean[] visited = new boolean[order.size()];
+
+        for (int num : course) {
+            combination(order, visited, 0, num);
+        }
+    }
+
+    private void combination(List<String> arr, boolean[] visited, int start, int r) {
+        if(r == 0) {
+            saveCombination(arr, visited);
+            return;
+        } else {
+            for(int i = start; i < arr.size(); i++) {
+                visited[i] = true;
+                combination(arr, visited, i + 1, r - 1);
+                visited[i] = false;
+            }
+        }
+    }
+
+    private void saveCombination(List<String> arr, boolean[] visited) {
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int i = 0 ; i < arr.size() ; i++) {
+            if (visited[i]) {
+                stringBuilder.append(arr.get(i));
+            }
+        }
+
+        String set = stringBuilder.toString();
+
+        menusFrequency.put(set, menusFrequency.getOrDefault(set, 0) + 1);
+    }
+
+    private List<Integer> getMaxOrderCount(int[] course) {
+        List<Integer> maxOrderCount = new ArrayList<>();
+
+        for (int courseSize : course) {
+            maxOrderCount.add(getEachMaxOrderCount(courseSize));
+        }
+
+        return maxOrderCount;
+    }
+
+    private Integer getEachMaxOrderCount(int courseSize) {
+        int max = Integer.MIN_VALUE;
+
+        for (String combination : menusFrequency.keySet()) {
+            if (combination.length() == courseSize) {
+                if (menusFrequency.get(combination) > max && menusFrequency.get(combination) > 1) {
+                    max = menusFrequency.get(combination);
                 }
-
-                standardOrder = toList(orders[i]);
             }
         }
 
-        // 각 세트 메뉴당 얼마나 시켰는 지 Map에 저장
-        Map<String, Integer> orderCountPerSetMenu = getOrderCountPerSetMenu(orders, setMenu);
-
-
-        // 가장 많이 시킨 메뉴만 뽑기
-
-        return getFinalSetMenu(courseNumber, orderCountPerSetMenu);
+        return max;
     }
 
-    private Map<String, Integer> getOrderCountPerSetMenu(String[] orders, Set<String> setMenu) {
-        Map<String, Integer> orderCountPerSetMenu = new HashMap<>();
 
-        for (String menu : setMenu) {
-            for (String order : orders) {
-                List<String> menuList = toList(menu); // AB
-                List<String> orderList = toList(order); //ABCDE
-                menuList.retainAll(orderList);
-                if (menuList.size() == menu.length()) {
-                    orderCountPerSetMenu.put(menu, orderCountPerSetMenu.getOrDefault(menu, 0) + 1);
+    private List<String> getSetMenus(List<Integer> maxOrderCount, int[] course) {
+        List<String> setMenus = new ArrayList<>();
+
+        for (int i = 0 ; i < course.length ; i++) {
+            getEachSetMenus(maxOrderCount.get(i), course[i], setMenus);
+        }
+
+        Collections.sort(setMenus);
+
+        return setMenus;
+    }
+
+    private void getEachSetMenus(int max, int courseSize, List<String> setMenus) {
+        for (String menu : menusFrequency.keySet()) {
+            if (menu.length() == courseSize) {
+                if (menusFrequency.get(menu) == max) {
+                    setMenus.add(menu);
                 }
             }
         }
-
-        return orderCountPerSetMenu;
-    }
-
-
-    private List<String> getFinalSetMenu(List<Integer> courseNumber, Map<String, Integer> orderCountSetMenu) {
-        Map<Integer, Integer> maxOrderCountPerMenuLength = getMaxOrderCountPerMenuLength(courseNumber, orderCountSetMenu);
-        List<String> finalSetMenu = new ArrayList<>();
-
-        // 가장 많이 시킨 메뉴만 뽑기
-        int maxCountPerMenu;
-
-        for (String menu : orderCountSetMenu.keySet()) {
-            maxCountPerMenu = maxOrderCountPerMenuLength.get(menu.length());
-
-            if (orderCountSetMenu.get(menu) == maxCountPerMenu) {
-                finalSetMenu.add(menu);
-            }
-        }
-
-        // 정렬
-        Collections.sort(finalSetMenu);
-
-        return finalSetMenu;
-    }
-
-    private Map<Integer, Integer> getMaxOrderCountPerMenuLength(List<Integer> courseNumber, Map<String, Integer> orderCountSetMenu) {
-        Map<Integer, Integer> maxOrderCountPerMenuLength = initMap(courseNumber);
-        int maxOrderCount = 0;
-        int preMenuLength = 0;
-
-        for (String menu : orderCountSetMenu.keySet()) {
-            if (preMenuLength != menu.length()) {
-                maxOrderCount = Integer.MIN_VALUE;
-            }
-            preMenuLength = menu.length();
-            if (maxOrderCountPerMenuLength.get(menu.length()) > maxOrderCount){
-                maxOrderCountPerMenuLength.put(preMenuLength, orderCountSetMenu.get(menu));
-            }
-        }
-
-        return maxOrderCountPerMenuLength;
-    }
-
-    private Map<Integer, Integer> initMap(List<Integer> courseNumber) {
-        Map<Integer, Integer> maxOrderCountPerMenuLength = new HashMap<>();
-
-        for (int course : courseNumber) {
-            maxOrderCountPerMenuLength.put(course, 0);
-        }
-
-        return maxOrderCountPerMenuLength;
-    }
-
-    private List<Integer> toIntegerList(int[] courses) {
-        List<Integer> integerList = new ArrayList<>();
-
-        for (int course : courses) {
-            integerList.add(course);
-        }
-
-        return integerList;
-    }
-    private List<String> toList(String order) {
-
-        String[] menuStrings = order.split("");
-
-        return new ArrayList<>(Arrays.asList(menuStrings));
-    }
-    private String getSetMenu(List<String> standardOrder) {
-        Collections.sort(standardOrder);
-        StringBuilder setMenu = new StringBuilder();
-
-        for (String menu : standardOrder) {
-            setMenu.append(menu);
-        }
-
-        return setMenu.toString();
     }
 }
