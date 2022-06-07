@@ -9,12 +9,11 @@ import java.util.stream.IntStream;
 //["XYZ", "XWY", "WXA"]	[2,3,4]	["WX", "XY"]
 
 // 한 사람이 주문한 메뉴가지고 코스 개수로 가능한 조합 만들어서 조합 카운팅하기.
-// 2명 이상이 시킨 메뉴에 있으면 정렬해서 맵에 메뉴, 시킨 횟수로 담기
-// 다 넣은 뒤엔 메뉴 개수(course)에 따라 가장 많이 시킨 세트만 골라내야한다.
+// 다 넣은 뒤엔 메뉴 개수(course)에 따라 가장 많이 시킨 세트만 골라내야한다. 그리고 2회 이상 주문된 메뉴를 골라야한다.
 // 하지만, 같은 횟수로 가장 많이 시킨 세트라면 다 담자.
 
 public class Solution {
-    Map<String, Integer> menusFrequency = new HashMap<>();
+    Map<String, Integer> menusCombination = new HashMap<>();
 
     public static void main(String[] args) {
         Solution solution = new Solution();
@@ -82,7 +81,7 @@ public class Solution {
 
         String set = stringBuilder.toString();
 
-        menusFrequency.put(set, menusFrequency.getOrDefault(set, 0) + 1);
+        menusCombination.put(set, menusCombination.getOrDefault(set, 0) + 1);
     }
 
     private List<Integer> getMaxOrderCount(int[] course) {
@@ -98,10 +97,10 @@ public class Solution {
     private Integer getEachMaxOrderCount(int courseSize) {
         int max = Integer.MIN_VALUE;
 
-        for (String combination : menusFrequency.keySet()) {
+        for (String combination : menusCombination.keySet()) {
             if (combination.length() == courseSize) {
-                if (menusFrequency.get(combination) > max && menusFrequency.get(combination) > 1) {
-                    max = menusFrequency.get(combination);
+                if (menusCombination.get(combination) > max && menusCombination.get(combination) > 1) {
+                    max = menusCombination.get(combination);
                 }
             }
         }
@@ -123,9 +122,9 @@ public class Solution {
     }
 
     private void getEachSetMenus(int max, int courseSize, List<String> setMenus) {
-        for (String menu : menusFrequency.keySet()) {
+        for (String menu : menusCombination.keySet()) {
             if (menu.length() == courseSize) {
-                if (menusFrequency.get(menu) == max) {
+                if (menusCombination.get(menu) == max) {
                     setMenus.add(menu);
                 }
             }
