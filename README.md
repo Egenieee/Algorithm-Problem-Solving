@@ -143,3 +143,4 @@
 * [영화감독 숌](https://www.acmicpc.net/problem/1436)
 * [수 정렬하기](https://www.acmicpc.net/problem/2750)
 * [수 정렬하기 2](https://www.acmicpc.net/problem/2751)
+* [수 정렬하기 3](https://www.acmicpc.net/problem/10989)
