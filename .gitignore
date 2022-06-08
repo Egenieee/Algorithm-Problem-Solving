@@ -1,7 +1,7 @@
 .DS_Store
 .idea/vcs.xml
 .idea/modules.xml
-Algorithm_Problem_Solving.iml
+.Algorithm_Problem_Solving.iml
 .idea/.gitignore
 
 # Created by https://www.toptal.com/developers/gitignore/api/intellij,java
