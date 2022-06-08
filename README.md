@@ -159,6 +159,7 @@
 * [통계학](https://www.acmicpc.net/problem/2108)
 * [소트인사이드](https://www.acmicpc.net/problem/1427)
 * [좌표 정렬하기](https://www.acmicpc.net/problem/11650)
+* [좌표 정렬하기 2](https://www.acmicpc.net/problem/11651)
 
 
 ____
