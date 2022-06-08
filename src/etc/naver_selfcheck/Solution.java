@@ -15,6 +15,8 @@ package etc.naver_selfcheck;
 //- 배열 arr의 길이는 1 이상 100 이하의 자연수입니다.
 //- 배열 arr의 원소는 1 이상 100 이하의 자연수입니다.
 
+//test
+
 import java.util.*;
 
 public class Solution {
