@@ -102,19 +102,27 @@
 -----
 
 ## baekjoon
-* [알파벳 찾기](https://www.acmicpc.net/problem/10809)
-* [단어 공부](https://www.acmicpc.net/problem/1157)
-* [손익분기점](https://www.acmicpc.net/problem/1712)
-* [셀프 넘버](https://www.acmicpc.net/problem/4673)
-* [한수](https://www.acmicpc.net/problem/1065)
+### 단계별로 풀어보기 
+#### 조건문
 * [오븐 시계](https://www.acmicpc.net/problem/2525)
 * [주사위 세개](https://www.acmicpc.net/problem/2480)
+
+#### 함수
+* [셀프 넘버](https://www.acmicpc.net/problem/4673)
+* [한수](https://www.acmicpc.net/problem/1065)
+
+#### 문자열
+* [알파벳 찾기](https://www.acmicpc.net/problem/10809)
+* [단어 공부](https://www.acmicpc.net/problem/1157)
 * [숫자의 합](https://www.acmicpc.net/problem/11720)
 * [문자열 반복](https://www.acmicpc.net/problem/2675)
 * [상수](https://www.acmicpc.net/problem/2908)
 * [다이얼](https://www.acmicpc.net/problem/5622)
 * [그룹 단어 체커](https://www.acmicpc.net/problem/1316)
 * [크로아티아 알파벳](https://www.acmicpc.net/problem/2941)
+
+#### 기본 수학 1
+* [손익분기점](https://www.acmicpc.net/problem/1712)
 * [벌집](https://www.acmicpc.net/problem/2292)
 * [분수 찾기](https://www.acmicpc.net/problem/1193)
 * [달팽이는 올라가고 싶다](https://www.acmicpc.net/problem/2869)
@@ -122,28 +130,40 @@
 * [ACM 호텔](https://www.acmicpc.net/problem/10250)
 * [큰수 A+B](https://www.acmicpc.net/problem/10757)
 * [설탕 배달](https://www.acmicpc.net/problem/2839)
+
+#### 기본 수학 2
 * [소수 찾기](https://www.acmicpc.net/problem/1978)
 * [소수](https://www.acmicpc.net/problem/2581)
 * [소인수분해](https://www.acmicpc.net/problem/11653)
 * [소수 구하기](https://www.acmicpc.net/problem/1929)
 * [베르트랑 공준](https://www.acmicpc.net/problem/4948)
 * [골드바흐의 추측](https://www.acmicpc.net/problem/9020)
+
+#### 재귀 
 * [팩토리얼](https://www.acmicpc.net/problem/10872)
 * [피보나치 수 5](https://www.acmicpc.net/problem/10870)
 * [재귀함수가 뭔가요?](https://www.acmicpc.net/problem/17478)
 * [별 찍기 - 10](https://www.acmicpc.net/problem/2447) - 나중에 다시 풀어보기 
-* [팰린드롬 만들기](https://www.acmicpc.net/problem/1213)
-* [다음 팰린드롬 수](https://www.acmicpc.net/problem/1334) - 실패. 다시 풀기
-* [수 이어 쓰기](https://www.acmicpc.net/problem/1515)
+
+#### 브루트 포스 
 * [블랙잭](https://www.acmicpc.net/problem/2798)
-* [스택](https://www.acmicpc.net/problem/10828)
 * [분해합](https://www.acmicpc.net/problem/2231)
 * [덩치](https://www.acmicpc.net/problem/7568)
 * [체스판 다시 칠하기](https://www.acmicpc.net/problem/1018)
 * [영화감독 숌](https://www.acmicpc.net/problem/1436)
+
+#### 정렬
 * [수 정렬하기](https://www.acmicpc.net/problem/2750)
 * [수 정렬하기 2](https://www.acmicpc.net/problem/2751)
 * [수 정렬하기 3](https://www.acmicpc.net/problem/10989)
 * [통계학](https://www.acmicpc.net/problem/2108)
 * [소트인사이드](https://www.acmicpc.net/problem/1427)
 * [좌표 정렬하기](https://www.acmicpc.net/problem/11650)
+
+
+____
+### 기타 - (나중에 정리)
+* [팰린드롬 만들기](https://www.acmicpc.net/problem/1213)
+* [다음 팰린드롬 수](https://www.acmicpc.net/problem/1334) - 실패. 다시 풀기
+* [수 이어 쓰기](https://www.acmicpc.net/problem/1515)
+* [스택](https://www.acmicpc.net/problem/10828)
