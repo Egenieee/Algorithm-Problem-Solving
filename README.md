@@ -145,3 +145,4 @@
 * [수 정렬하기 2](https://www.acmicpc.net/problem/2751)
 * [수 정렬하기 3](https://www.acmicpc.net/problem/10989)
 * [통계학](https://www.acmicpc.net/problem/2108)
+* [소트인사이드](https://www.acmicpc.net/problem/1427)
