@@ -1,4 +1,8 @@
 .DS_Store
+.idea/vcs.xml
+.idea/modules.xml
+Algorithm_Problem_Solving.iml
+.idea/.gitignore
 
 # Created by https://www.toptal.com/developers/gitignore/api/intellij,java
 # Edit at https://www.toptal.com/developers/gitignore?templates=intellij,java
@@ -87,7 +91,7 @@ fabric.properties
 
 # *.iml
 # modules.xml
-# .idea/misc.xml
+.idea/misc.xml
 # *.ipr
 
 # Sonarlint plugin
