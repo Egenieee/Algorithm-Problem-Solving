@@ -66,41 +66,6 @@
 
 -----
 
-## leetcode
-* [Number of Strings That Appear as Substrings in Word](https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/)
-* [Check if One String Swap Can Make Strings Equal](https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/)
-* [Check If N and Its Double Exist](https://leetcode.com/problems/check-if-n-and-its-double-exist/)
-* [Check If It Is a Straight Line](https://leetcode.com/problems/check-if-it-is-a-straight-line/)
-* [Day of the Year](https://leetcode.com/problems/day-of-the-year/)
-* [Duplicate Zeros](https://leetcode.com/problems/duplicate-zeros/)
-* [Find Common Characters](https://leetcode.com/problems/find-common-characters/)
-* [Add to Array-Form of Integer](https://leetcode.com/problems/add-to-array-form-of-integer/)
-* [Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array/)
-* [Long Pressed Name](https://leetcode.com/problems/long-pressed-name/)
-* [Buddy Strings](https://leetcode.com/problems/buddy-strings/)
-* [Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/)
-* [Most Common Word](https://leetcode.com/problems/most-common-word/)
-* [Binary Number with Alternating Bits](https://leetcode.com/problems/binary-number-with-alternating-bits/)
-* [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/)
-* [Detect Capital](https://leetcode.com/problems/detect-capital/)
-* [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)
-* [Number Complement](https://leetcode.com/problems/number-complement/)
-* [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)
-* [Add Strings](https://leetcode.com/problems/add-strings/)
-* [Third Maximum Number](https://leetcode.com/problems/third-maximum-number/)
-* [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)
-* [Is Subsequence](https://leetcode.com/problems/is-subsequence/)
-* [Find the Difference](https://leetcode.com/problems/find-the-difference/)
-* [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)
-* [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/submissions/)
-* [Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)
-* [Reverse String](https://leetcode.com/problems/reverse-string/)
-* [Word Pattern](https://leetcode.com/problems/word-pattern/)
-* [Move Zeroes](https://leetcode.com/problems/move-zeroes/)
-* [Add Digits](https://leetcode.com/problems/add-digits/)
-
------
-
 ## baekjoon
 ### 단계별로 풀어보기 
 #### 조건문
@@ -162,9 +127,43 @@
 * [좌표 정렬하기 2](https://www.acmicpc.net/problem/11651)
 
 
-____
 ### 기타 - (나중에 정리)
 * [팰린드롬 만들기](https://www.acmicpc.net/problem/1213)
 * [다음 팰린드롬 수](https://www.acmicpc.net/problem/1334) - 실패. 다시 풀기
 * [수 이어 쓰기](https://www.acmicpc.net/problem/1515)
 * [스택](https://www.acmicpc.net/problem/10828)
+
+-----
+
+## leetcode
+* [Number of Strings That Appear as Substrings in Word](https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/)
+* [Check if One String Swap Can Make Strings Equal](https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/)
+* [Check If N and Its Double Exist](https://leetcode.com/problems/check-if-n-and-its-double-exist/)
+* [Check If It Is a Straight Line](https://leetcode.com/problems/check-if-it-is-a-straight-line/)
+* [Day of the Year](https://leetcode.com/problems/day-of-the-year/)
+* [Duplicate Zeros](https://leetcode.com/problems/duplicate-zeros/)
+* [Find Common Characters](https://leetcode.com/problems/find-common-characters/)
+* [Add to Array-Form of Integer](https://leetcode.com/problems/add-to-array-form-of-integer/)
+* [Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array/)
+* [Long Pressed Name](https://leetcode.com/problems/long-pressed-name/)
+* [Buddy Strings](https://leetcode.com/problems/buddy-strings/)
+* [Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/)
+* [Most Common Word](https://leetcode.com/problems/most-common-word/)
+* [Binary Number with Alternating Bits](https://leetcode.com/problems/binary-number-with-alternating-bits/)
+* [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/)
+* [Detect Capital](https://leetcode.com/problems/detect-capital/)
+* [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)
+* [Number Complement](https://leetcode.com/problems/number-complement/)
+* [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)
+* [Add Strings](https://leetcode.com/problems/add-strings/)
+* [Third Maximum Number](https://leetcode.com/problems/third-maximum-number/)
+* [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)
+* [Is Subsequence](https://leetcode.com/problems/is-subsequence/)
+* [Find the Difference](https://leetcode.com/problems/find-the-difference/)
+* [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)
+* [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/submissions/)
+* [Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)
+* [Reverse String](https://leetcode.com/problems/reverse-string/)
+* [Word Pattern](https://leetcode.com/problems/word-pattern/)
+* [Move Zeroes](https://leetcode.com/problems/move-zeroes/)
+* [Add Digits](https://leetcode.com/problems/add-digits/)
