@@ -14,25 +14,31 @@ public class Main {
         st = new StringTokenizer(br.readLine());
 
         List<Integer> originCoordinates = new ArrayList<>();
+        List<Integer> sorted = new ArrayList<>();
 
         for (int i = 0 ; i < N ; i++) {
-            originCoordinates.add(Integer.parseInt(st.nextToken()));
+            String coordinate = st.nextToken();
+            originCoordinates.add(Integer.parseInt(coordinate));
+            sorted.add(Integer.parseInt(coordinate));
         }
 
-        Set<Integer> removeDuplicated = new HashSet<>(originCoordinates);
-        List<Integer> sorted = new ArrayList<>(removeDuplicated);
         Collections.sort(sorted);
 
-        Map<Integer, Integer> order = new HashMap<>();
+        Map<Integer, Integer> orderMap = new HashMap<>();
 
-        for (int i = 0 ; i < sorted.size() ; i++) {
-            order.put(sorted.get(i), i);
+        int order = 0;
+
+        for (int coordinate : sorted) {
+            if (!orderMap.containsKey(coordinate)) {
+                orderMap.put(coordinate, order);
+                order++;
+            }
         }
 
         List<String> compressedCoordinates = new ArrayList<>();
 
         for (int coordinate : originCoordinates) {
-            int compressed = order.get(coordinate);
+            int compressed = orderMap.get(coordinate);
             compressedCoordinates.add(String.valueOf(compressed));
         }
 
