@@ -1,9 +1,7 @@
 package backjoon.symmetric_difference_set;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.StringTokenizer;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -16,8 +14,8 @@ public class Main {
 
         st = new StringTokenizer(br.readLine());
 
-        List<Integer> setA = new ArrayList<>();
-        List<Integer> setB = new ArrayList<>();
+        Set<Integer> setA = new HashSet<>();
+        Set<Integer> setB = new HashSet<>();
 
         for (int i = 0 ; i < A ; i++) {
             setA.add(Integer.parseInt(st.nextToken()));
@@ -29,19 +27,13 @@ public class Main {
             setB.add(Integer.parseInt(st.nextToken()));
         }
 
-        List<Integer> checkA = new ArrayList<>(setA);
-        List<Integer> checkB = new ArrayList<>(setB);
+        Set<Integer> setAForSub = new HashSet<>(setA);
+        Set<Integer> setBForSub = new HashSet<>(setB);
 
-        int diffA = setA.size();
-        int diffB = setB.size();
+        setAForSub.removeAll(setB);
+        setBForSub.removeAll(setA);
 
-        setA.retainAll(setB);
-        checkB.retainAll(checkA);
-
-        diffA -= setA.size();
-        diffB -= checkB.size();
-
-        bw.write(String.valueOf(diffA + diffB));
+        bw.write(String.valueOf(setAForSub.size() + setBForSub.size()));
         bw.flush();
         bw.close();
     }
