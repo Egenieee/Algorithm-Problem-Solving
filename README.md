@@ -135,6 +135,7 @@
 * [나는야 포켓몬 마스터 이다솜](https://www.acmicpc.net/problem/1620)
 * [숫자 카드 2](https://www.acmicpc.net/problem/10816)
 * [듣보잡](https://www.acmicpc.net/problem/1764)
+* [대칭 차집합](https://www.acmicpc.net/problem/1269)
 
 #### 스택 
 * [스택](https://www.acmicpc.net/problem/10828)
