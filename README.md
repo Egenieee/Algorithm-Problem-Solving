@@ -132,6 +132,7 @@
 #### 집합과 맵
 * [숫자 카드](https://www.acmicpc.net/problem/10815)
 * [문자열 집합](https://www.acmicpc.net/problem/14425)
+* [나는야 포켓몬 마스터 이다솜](https://www.acmicpc.net/problem/1620)
 
 #### 스택 
 * [스택](https://www.acmicpc.net/problem/10828)
