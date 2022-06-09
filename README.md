@@ -129,6 +129,9 @@
 * [나이순 정렬](https://www.acmicpc.net/problem/10814)
 * [좌표 압축](https://www.acmicpc.net/problem/18870)
 
+#### 집합과 맵
+* [숫자 카드](https://www.acmicpc.net/problem/10815)
+
 
 ### 기타 - (나중에 정리)
 * [팰린드롬 만들기](https://www.acmicpc.net/problem/1213)
