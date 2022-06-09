@@ -126,6 +126,7 @@
 * [좌표 정렬하기](https://www.acmicpc.net/problem/11650)
 * [좌표 정렬하기 2](https://www.acmicpc.net/problem/11651)
 * [단어 정렬](https://www.acmicpc.net/problem/1181)
+* [나이순 정렬](https://www.acmicpc.net/problem/10814)
 
 
 ### 기타 - (나중에 정리)
