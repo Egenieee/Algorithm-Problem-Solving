@@ -131,13 +131,16 @@
 
 #### 집합과 맵
 * [숫자 카드](https://www.acmicpc.net/problem/10815)
+* [문자열 집합](https://www.acmicpc.net/problem/14425)
 
+#### 스택 
+* [스택](https://www.acmicpc.net/problem/10828)
 
 ### 기타 - (나중에 정리)
 * [팰린드롬 만들기](https://www.acmicpc.net/problem/1213)
 * [다음 팰린드롬 수](https://www.acmicpc.net/problem/1334) - 실패. 다시 풀기
 * [수 이어 쓰기](https://www.acmicpc.net/problem/1515)
-* [스택](https://www.acmicpc.net/problem/10828)
+
 
 -----
 
