@@ -138,6 +138,9 @@
 * [대칭 차집합](https://www.acmicpc.net/problem/1269)
 * [서로 다른 부분 문자열의 개수](https://www.acmicpc.net/problem/11478)
 
+#### 기하 1
+* [직사각형에서 탈출](https://www.acmicpc.net/problem/1085)
+
 #### 스택 
 * [스택](https://www.acmicpc.net/problem/10828)
 
