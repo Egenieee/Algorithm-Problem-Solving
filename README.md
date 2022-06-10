@@ -37,6 +37,7 @@
 * [제일 작은 수 제거하기](https://programmers.co.kr/learn/courses/30/lessons/12935)
 * [K번째수](https://programmers.co.kr/learn/courses/30/lessons/42748)
 * [키패드 누르기](https://programmers.co.kr/learn/courses/30/lessons/67256)
+* [체육복](https://programmers.co.kr/learn/courses/30/lessons/42862)
 
 ### Level 2
 * [JadenCase 문자열 만들기](https://programmers.co.kr/learn/courses/30/lessons/12951/questions)
