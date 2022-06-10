@@ -62,6 +62,7 @@
 * [최댓값과 최솟값](https://programmers.co.kr/learn/courses/30/lessons/12939)
 * [기능 개발](https://programmers.co.kr/learn/courses/30/lessons/42586)
 * [더 맵게](https://programmers.co.kr/learn/courses/30/lessons/42626)
+* [올바른 괄호](https://programmers.co.kr/learn/courses/30/lessons/12909)
 
 ### Level 3
 * [베스트앨범](https://programmers.co.kr/learn/courses/30/lessons/42579)
