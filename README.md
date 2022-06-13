@@ -144,6 +144,7 @@
 #### 기하 1
 * [직사각형에서 탈출](https://www.acmicpc.net/problem/1085)
 * [네 번째 점](https://www.acmicpc.net/problem/3009)
+* [직각삼각형](https://www.acmicpc.net/problem/4153)
 
 #### 스택 
 * [스택](https://www.acmicpc.net/problem/10828)
