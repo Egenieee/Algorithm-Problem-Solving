@@ -33,93 +33,51 @@ public class Main {
         int countPerOneSquaredMeter = Integer.parseInt(br.readLine());
         int countOfMelon;
 
+        int maxHeight = Integer.MIN_VALUE;
+        int maxWidth = Integer.MIN_VALUE;
+
+        int maxHeightIdx = 0;
+        int maxWidthIdx = 0;
+
         List<Pair> inputField = new ArrayList<>();
         Set<Pair> subSet = new HashSet<>();
 
-        for (int i = 0 ; i < 6 ; i++) {
+        for (int idx = 0 ; idx < 6 ; idx++) {
             st = new StringTokenizer(br.readLine());
 
             int direction = Integer.parseInt(st.nextToken());
             int length = Integer.parseInt(st.nextToken());
 
-            inputField.add(new Pair(direction, length));
+            Pair line = new Pair(direction, length);
+
+            if ((direction == 1 || direction == 2) && (maxWidth < length)) {
+                maxWidth = length;
+                maxWidthIdx = idx;
+            }
+
+            if ((direction == 3 || direction == 4) && (maxHeight < length)) {
+                maxHeight = length;
+                maxHeightIdx = idx;
+            }
+
+            inputField.add(line);
         }
 
         Set<Pair> subAreaSet = new HashSet<>(inputField);
 
-        Pair maxHeight = getMaxHeight(inputField);
-        Pair maxWidth = getMaxWidth(inputField);
-
-        subSet.add(maxHeight);
-        subSet.add(maxWidth);
-
-        // 돌면서 가장 긴 h,w 인접 변 찾기
-        for (int i = 0 ; i < inputField.size() ; i++) {
-            Pair line = inputField.get(i);
-            if (line == maxHeight) {
-                saveLinePair(inputField, subSet, line);
-            }
-
-            if (line == maxWidth) {
-                saveLinePair(inputField, subSet, line);
-            }
-        }
+        saveSafeLine(inputField, subSet, maxHeightIdx);
+        saveSafeLine(inputField, subSet, maxWidthIdx);
 
         subAreaSet.removeAll(subSet);
 
-        int wholeArea = maxHeight.getLength() * maxWidth.getLength();
-        int subArea = getSubArea(subAreaSet);
-
-        wholeArea -= subArea;
-
-        countOfMelon = wholeArea * countPerOneSquaredMeter;
+        countOfMelon = getCountOfMelon(subAreaSet, maxHeight, maxWidth, countPerOneSquaredMeter);
 
         bw.write(String.valueOf(countOfMelon));
         bw.flush();
         bw.close();
     }
 
-    private static Pair getMaxHeight(List<Pair> inputField) {
-        int maxHeight = Integer.MIN_VALUE;
-
-        Pair maxHeightPair = null;
-
-        for (Pair pair : inputField) {
-            if (pair.getDirection() == 1 || pair.getDirection() == 2) {
-                continue;
-            }
-
-            if (pair.getLength() > maxHeight) {
-                maxHeight = pair.getLength();
-                maxHeightPair = pair;
-            }
-        }
-
-        return maxHeightPair;
-    }
-
-    private static Pair getMaxWidth(List<Pair> inputField) {
-        int maxWidth = Integer.MIN_VALUE;
-
-        Pair maxWidthPair = null;
-
-        for (Pair pair : inputField) {
-            if (pair.getDirection() == 3 || pair.getDirection() == 4) {
-                continue;
-            }
-
-            if (pair.getLength() > maxWidth) {
-                maxWidth = pair.getLength();
-                maxWidthPair = pair;
-            }
-        }
-
-        return maxWidthPair;
-    }
-
-    private static void saveLinePair(List<Pair> inputField, Set<Pair> subSet, Pair line) {
-        int idx = inputField.indexOf(line);
-
+    private static void saveSafeLine(List<Pair> inputField, Set<Pair> subSet, int idx) {
         if (idx == 0) {
             subSet.add(inputField.get(inputField.size() - 1));
             subSet.add(inputField.get(idx + 1));
@@ -130,6 +88,15 @@ public class Main {
             subSet.add(inputField.get(idx - 1));
             subSet.add(inputField.get(idx + 1));
         }
+    }
+
+    private static int getCountOfMelon(Set<Pair> subAreaSet, int maxHeight,int maxWidth, int countPerOneSquaredMeter) {
+        int wholeArea = maxHeight * maxWidth;
+        int subArea = getSubArea(subAreaSet);
+
+        wholeArea -= subArea;
+
+        return wholeArea * countPerOneSquaredMeter;
     }
 
     private static int getSubArea(Set<Pair> subAreaSet) {
