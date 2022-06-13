@@ -146,6 +146,7 @@
 * [네 번째 점](https://www.acmicpc.net/problem/3009)
 * [직각삼각형](https://www.acmicpc.net/problem/4153)
 * [참외밭](https://www.acmicpc.net/problem/2477)
+* [택시 기하학](https://www.acmicpc.net/problem/3053)
 
 #### 스택 
 * [스택](https://www.acmicpc.net/problem/10828)
