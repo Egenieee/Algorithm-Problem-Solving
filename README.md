@@ -151,6 +151,7 @@
 #### 스택 
 * [스택](https://www.acmicpc.net/problem/10828)
 * [괄호](https://www.acmicpc.net/problem/9012)
+* [오큰수](https://www.acmicpc.net/problem/17298) - 다시 풀어보기
 
 ### 기타 - (나중에 정리)
 * [팰린드롬 만들기](https://www.acmicpc.net/problem/1213)
