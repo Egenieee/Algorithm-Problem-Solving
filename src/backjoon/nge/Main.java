@@ -14,31 +14,38 @@ public class Main {
         StringTokenizer st = new StringTokenizer(br.readLine());
 
         Stack<Integer> stack = new Stack<>();
-        Stack<Integer> result = new Stack<>();
 
         for (int i = 0 ; i < size ; i++) {
-            int number = Integer.parseInt(st.nextToken());
-
-            stack.push(number);
+            stack.push(Integer.parseInt(st.nextToken()));
         }
+
+        String[] result = new String[stack.size()];
 
         int current = stack.pop();
         int previous = current;
         int max = current;
         int nge = -1;
 
-        result.push(nge);
+        int resultIdx = stack.size();
+
+        result[resultIdx--] = String.valueOf(nge);
 
         while (!stack.empty()) {
             current = stack.pop();
             if (current < previous) {
-                max = previous;
+                nge = previous;
+            } else if (current < max) {
+                nge = max;
             } else if (current > max) {
-                max = -1;
+                nge = -1;
+                //max = current;
             }
-            nge = max;
-            result.push(nge);
+            result[resultIdx--] = String.valueOf(nge);
             previous = current;
         }
+
+        bw.write(String.join(" ", result));
+        bw.flush();
+        bw.close();
     }
 }
