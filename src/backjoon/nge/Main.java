@@ -24,7 +24,7 @@ public class Main {
 
         // stack 안에 있는 값은 바뀌어야 할 인덱스
         // 현재 보고 있는 값과 스택의 맨 위에 있는 값을 비교해서 현재 값이 더 크면, 오큰수가 되기 때문에
-        // 스택에서 팝하고 그 인덱스에 현재 보고 있는 값을 할당한다.
+        // 스택에서 팝하고 그 인덱스에 현재 보고 있는 값을 오큰수로 할당한다.
         for (int currentIdx = 0 ; currentIdx < size ; currentIdx++) {
             while (!stack.isEmpty() && numbers[stack.peek()] < numbers[currentIdx]) {
                 numbers[stack.pop()] = numbers[currentIdx];
