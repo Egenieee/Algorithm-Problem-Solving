@@ -41,9 +41,21 @@ public class Main {
         bw.close();
     }
 
-    // 원 안에 출발점이나 도착점이 존재한다면 카운트 증가 원 안에 있을 경우에만 진입/이탈해야하기 때문
+    // 원 안에 출발점이나 도착점이 존재한다면 카운트 증가.
+    // 원 안에 출발점이나 도착점이 있고 다른 한 점은 원 밖에 있어야 한다. -> 이탈 안하고 도달가능하기 때문
+    // 원 안에 있을 경우에만 진입/이탈해야하기 때문
     private static boolean isInThePlanet(int startX, int startY, int endX, int endY, int centerX, int centerY, int radius) {
-        return Math.pow(radius, 2) > Math.pow(centerX - startX, 2) + Math.pow(centerY - startY, 2)
-                || Math.pow(radius, 2) > Math.pow(centerX - endX, 2) + Math.pow(centerY - endY, 2);
+        boolean startPointIsInThePlanet = (Math.pow(radius, 2) >= Math.pow(centerX - startX, 2) + Math.pow(centerY - startY, 2));
+        boolean endPointIsInThePlanet = (Math.pow(radius, 2) >= Math.pow(centerX - endX, 2) + Math.pow(centerY - endY, 2));
+
+        if (startPointIsInThePlanet && !endPointIsInThePlanet) {
+            return true;
+        }
+
+        if(!startPointIsInThePlanet && endPointIsInThePlanet) {
+            return true;
+        }
+
+        return false;
     }
 }
