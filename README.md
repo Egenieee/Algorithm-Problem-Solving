@@ -149,6 +149,7 @@
 * [택시 기하학](https://www.acmicpc.net/problem/3053)
 * [하키](https://www.acmicpc.net/problem/1358)
 * [터렛](https://www.acmicpc.net/problem/1002)
+* [어린왕자](https://www.acmicpc.net/problem/1004)
 
 #### 스택 
 * [스택](https://www.acmicpc.net/problem/10828)
