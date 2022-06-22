@@ -153,6 +153,7 @@
 
 #### 정수론 및 조합론
 * [배수와 약수](https://www.acmicpc.net/problem/5086)
+* [약수](https://www.acmicpc.net/problem/1037)
 
 #### 스택 
 * [스택](https://www.acmicpc.net/problem/10828)
