@@ -151,6 +151,9 @@
 * [터렛](https://www.acmicpc.net/problem/1002)
 * [어린왕자](https://www.acmicpc.net/problem/1004)
 
+#### 정수론 및 조합론
+* [배수와 약수](https://www.acmicpc.net/problem/5086)
+
 #### 스택 
 * [스택](https://www.acmicpc.net/problem/10828)
 * [괄호](https://www.acmicpc.net/problem/9012)
