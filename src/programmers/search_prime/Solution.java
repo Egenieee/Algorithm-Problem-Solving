@@ -4,11 +4,12 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Solution {
+    //int count = 0;
     Set<Integer> numberPermutation = new HashSet<>();
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.solution("12"));
+        System.out.println(solution.solution("123"));
     }
 
     public int solution(String numbers) {
@@ -44,6 +45,7 @@ public class Solution {
     }
 
     // curNumLen -> depth, 깊이만큼 순열을 뽑는다.
+    // depth는 0부터 시작
     // digit -> 뽑아야 하는 숫자 개수
     // 현재 깊이와 digit이 같다면 순열 만들기 끝 -> 저장하자.
     private void getPermutation(String[] numbers, String[] output, boolean[] visited, int curNumLen, int digit) {
@@ -56,19 +58,22 @@ public class Solution {
             if (!visited[i]) {
                 visited[i] = true;
                 output[curNumLen] = numbers[i];
+                //count++;
+                //System.out.println(Arrays.toString(output) + "curNumLen : " + curNumLen + " visit :" + count);
                 getPermutation(numbers, output, visited, curNumLen + 1, digit);
                 visited[i] = false;
             }
         }
     }
 
-    private void savePermutation(String[] arr, int r) {
+    private void savePermutation(String[] numbers, int digit) {
         StringBuilder sb = new StringBuilder();
 
-        for (int i = 0; i < r; i++) {
-            sb.append(arr[i]);
+        for (int i = 0; i < digit; i++) {
+            sb.append(numbers[i]);
         }
-        numberPermutation.add(Integer.parseInt(sb.toString()));
+        String number = sb.toString();
+        numberPermutation.add(Integer.parseInt(number));
     }
 
     private boolean isPrime(int number) {
