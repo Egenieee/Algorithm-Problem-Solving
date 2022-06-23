@@ -65,7 +65,8 @@
 * [더 맵게](https://programmers.co.kr/learn/courses/30/lessons/42626)
 * [올바른 괄호](https://programmers.co.kr/learn/courses/30/lessons/12909)
 * [소수 찾기](https://programmers.co.kr/learn/courses/30/lessons/42839)
-* [2개 이하로 다른 비트](https://programmers.co.kr/learn/courses/30/lessons/77885) - 실패 
+* [2개 이하로 다른 비트](https://programmers.co.kr/learn/courses/30/lessons/77885) - 실패
+* [순위 검색](https://programmers.co.kr/learn/courses/30/lessons/72412) - 실패
 
 ### Level 3
 * [베스트앨범](https://programmers.co.kr/learn/courses/30/lessons/42579)

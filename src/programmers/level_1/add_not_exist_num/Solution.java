@@ -1,4 +1,4 @@
-package programmers.level_2.add_not_exist_num;
+package programmers.level_1.add_not_exist_num;
 
 import java.util.HashMap;
 import java.util.Set;
