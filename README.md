@@ -38,6 +38,7 @@
 * [K번째수](https://programmers.co.kr/learn/courses/30/lessons/42748)
 * [키패드 누르기](https://programmers.co.kr/learn/courses/30/lessons/67256)
 * [체육복](https://programmers.co.kr/learn/courses/30/lessons/42862)
+* [같은 숫자는 싫어](https://programmers.co.kr/learn/courses/30/lessons/12906)
 
 ### Level 2
 * [JadenCase 문자열 만들기](https://programmers.co.kr/learn/courses/30/lessons/12951/questions)
