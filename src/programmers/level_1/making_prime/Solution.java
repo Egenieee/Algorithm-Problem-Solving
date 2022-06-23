@@ -1,4 +1,4 @@
-package programmers.making_prime;
+package programmers.level_1.making_prime;
 
 public class Solution {
     public static void main(String[] args) {

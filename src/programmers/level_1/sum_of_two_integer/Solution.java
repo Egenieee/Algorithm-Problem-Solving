@@ -1,4 +1,4 @@
-package programmers.sum_of_two_integer;
+package programmers.level_1.sum_of_two_integer;
 
 public class Solution {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package programmers.level_two.right_parenthesis;
+package programmers.level_2.right_parenthesis;
 
 // s	answer
 //"()()"	true

@@ -1,9 +1,6 @@
-package programmers.secret_map;
+package programmers.level_1.secret_map;
 
 // 두 배열을 먼저 이진수로 바꾼 뒤에 and 연산을 한다. 그 결과를 #과 " "으로 치환하여 리턴하자.
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class Solution {
     public static void main(String[] args) {

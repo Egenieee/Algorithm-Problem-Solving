@@ -1,4 +1,4 @@
-package programmers.level_one.remove_minimum;
+package programmers.level_1.remove_minimum;
 
 import java.util.ArrayList;
 import java.util.List;

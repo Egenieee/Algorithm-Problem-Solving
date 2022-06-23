@@ -1,4 +1,4 @@
-package programmers.calculate_ride_price;
+package programmers.level_1.calculate_ride_price;
 
 public class Solution {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package programmers.fibonacci_number;
+package programmers.level_2.fibonacci_number;
 
 import java.io.BufferedReader;
 import java.io.IOException;

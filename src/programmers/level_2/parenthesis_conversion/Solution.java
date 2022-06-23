@@ -1,4 +1,4 @@
-package programmers.level_two.parenthesis_conversion;
+package programmers.level_2.parenthesis_conversion;
 
 import java.util.Stack;
 

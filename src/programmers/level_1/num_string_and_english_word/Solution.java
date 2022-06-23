@@ -1,4 +1,4 @@
-package programmers.num_string_and_english_word;
+package programmers.level_1.num_string_and_english_word;
 
 
 public class Solution {

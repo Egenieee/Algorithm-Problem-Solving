@@ -1,4 +1,4 @@
-package programmers.level_two.tuple;
+package programmers.level_2.tuple;
 
 // input : "{{2},{2,1},{2,1,3},{2,1,3,4}}"
 // output : [2,1,3,4]

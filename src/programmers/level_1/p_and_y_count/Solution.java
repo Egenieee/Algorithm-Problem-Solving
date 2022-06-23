@@ -1,4 +1,4 @@
-package programmers.level_one.p_and_y_count;
+package programmers.level_1.p_and_y_count;
 
 public class Solution {
     public static void main(String[] args) {

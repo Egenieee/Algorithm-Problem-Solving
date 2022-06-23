@@ -1,4 +1,4 @@
-package programmers.string_basic;
+package programmers.level_1.string_basic;
 
 public class Solution {
     public static void main(String[] args) {

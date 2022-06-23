@@ -1,4 +1,4 @@
-package programmers.hide_phone_number;
+package programmers.level_1.hide_phone_number;
 
 public class Solution {
     public static void main(String[] args) {

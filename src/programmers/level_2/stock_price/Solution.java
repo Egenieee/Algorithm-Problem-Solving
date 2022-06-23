@@ -1,4 +1,4 @@
-package programmers.level_two.stock_price;
+package programmers.level_2.stock_price;
 
 // input : [1, 2, 3, 2, 3]	, output : [4, 3, 1, 1, 0]
 // 각 초 대의 주식 가격이 몇 초간 가격이 떨어지지 않았는 지 배열에 담아서 리턴

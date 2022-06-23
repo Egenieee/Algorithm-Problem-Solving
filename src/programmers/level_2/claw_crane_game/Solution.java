@@ -1,4 +1,4 @@
-package programmers.claw_crane_game;
+package programmers.level_2.claw_crane_game;
 
 // 행 기준으로 격자 뒤지면서 0이 아닌 요소가 있다면 list에 차례대로 넣기
 // 리스트에서 전과 같은 요소가 들어가면 전 요소와 현재 요소 없애고 터뜨린 인형 개수 증가

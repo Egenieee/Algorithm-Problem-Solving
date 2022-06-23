@@ -1,4 +1,4 @@
-package programmers.level_two.more_spicy;
+package programmers.level_2.more_spicy;
 
 import java.util.PriorityQueue;
 

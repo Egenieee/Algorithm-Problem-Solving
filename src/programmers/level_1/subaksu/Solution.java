@@ -1,4 +1,4 @@
-package programmers.subaksu;
+package programmers.level_1.subaksu;
 
 public class Solution {
     public static void main(String[] args) {

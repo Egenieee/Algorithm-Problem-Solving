@@ -1,4 +1,4 @@
-package programmers.recommend_new_id;
+package programmers.level_1.recommend_new_id;
 
 // new_id에 나타낼 수 있는 문자 -_.~!@#$%^&*()=+[{]}:?,<>/
 // 허용되지 않는 문자 ~!@#$%^&*()=+[{]}:?,<>/

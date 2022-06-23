@@ -1,4 +1,4 @@
-package programmers.ponketmon;
+package programmers.level_1.ponketmon;
 
 import java.util.HashSet;
 import java.util.Set;

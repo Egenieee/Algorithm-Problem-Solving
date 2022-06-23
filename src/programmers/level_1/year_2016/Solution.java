@@ -1,4 +1,4 @@
-package programmers.year_2016;
+package programmers.level_1.year_2016;
 
 public class Solution {
     public static void main(String[] args) {

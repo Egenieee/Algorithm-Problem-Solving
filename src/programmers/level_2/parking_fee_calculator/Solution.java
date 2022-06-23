@@ -1,4 +1,4 @@
-package programmers.level_two.parking_fee_calculator;
+package programmers.level_2.parking_fee_calculator;
 
 import java.util.*;
 

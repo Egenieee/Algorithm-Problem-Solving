@@ -1,4 +1,4 @@
-package programmers.level_one.matrix_add;
+package programmers.level_1.matrix_add;
 
 import java.util.Arrays;
 

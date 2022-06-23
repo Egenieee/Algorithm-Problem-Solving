@@ -1,4 +1,4 @@
-package programmers.lottos_rank;
+package programmers.level_1.lottos_rank;
 
 import java.util.*;
 

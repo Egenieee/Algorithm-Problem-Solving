@@ -1,4 +1,4 @@
-package programmers.level_3.compressed_string;
+package programmers.level_2.compressed_string;
 
 // 문자열을 k개 씩 자른다.
 // 반복되는 문자열이 있으면 묶는다. (Map에 넣어볼까?)

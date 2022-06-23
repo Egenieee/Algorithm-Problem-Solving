@@ -1,4 +1,4 @@
-package programmers.level_one.sorting_strings_my_own_way;
+package programmers.level_1.sorting_strings_my_own_way;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package programmers.level_one.ternary_flip;
+package programmers.level_1.ternary_flip;
 
 class Solution {
     public static void main(String[] args) {

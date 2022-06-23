@@ -1,4 +1,4 @@
-package programmers.level_3.phone_num_list;
+package programmers.level_2.phone_num_list;
 
 import java.util.HashMap;
 

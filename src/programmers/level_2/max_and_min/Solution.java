@@ -1,4 +1,4 @@
-package programmers.level_3.max_and_min;
+package programmers.level_2.max_and_min;
 
 import java.util.ArrayList;
 import java.util.List;

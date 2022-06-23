@@ -1,4 +1,4 @@
-package programmers.level_two.search_prime;
+package programmers.level_2.search_prime;
 
 import java.util.HashSet;
 import java.util.Set;

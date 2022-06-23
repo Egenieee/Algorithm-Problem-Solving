@@ -1,4 +1,4 @@
-package programmers.caesar_cipher;
+package programmers.level_2.caesar_cipher;
 
 public class Solution {
     public static final int ALPHABET_COUNT = 26;

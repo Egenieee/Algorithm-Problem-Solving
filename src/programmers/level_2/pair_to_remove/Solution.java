@@ -1,4 +1,4 @@
-package programmers.level_two.pair_to_remove;
+package programmers.level_2.pair_to_remove;
 
 import java.util.Stack;
 

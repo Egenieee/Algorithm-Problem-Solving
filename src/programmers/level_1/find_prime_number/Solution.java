@@ -1,4 +1,4 @@
-package programmers.level_one.find_prime_number;
+package programmers.level_1.find_prime_number;
 
 public class Solution {
     public static void main(String[] args) {

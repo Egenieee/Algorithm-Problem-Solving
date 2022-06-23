@@ -1,4 +1,4 @@
-package programmers.level_two.printer;
+package programmers.level_2.printer;
 
 // priorities [2, 1, 3, 2] location 2 return 1
 // 확인 -> 뒤로 넘기거나, -> 프린트하거나

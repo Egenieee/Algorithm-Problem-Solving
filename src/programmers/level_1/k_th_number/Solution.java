@@ -1,4 +1,4 @@
-package programmers.level_one.k_th_number;
+package programmers.level_1.k_th_number;
 
 import java.util.Arrays;
 

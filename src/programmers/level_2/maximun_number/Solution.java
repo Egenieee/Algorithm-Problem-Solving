@@ -1,4 +1,4 @@
-package programmers.level_3.maximun_number;
+package programmers.level_2.maximun_number;
 
 import java.util.Arrays;
 import java.util.List;

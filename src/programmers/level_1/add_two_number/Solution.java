@@ -1,4 +1,4 @@
-package programmers.add_two_number;
+package programmers.level_1.add_two_number;
 
 import java.util.Arrays;
 import java.util.HashSet;

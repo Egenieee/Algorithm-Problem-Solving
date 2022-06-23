@@ -1,4 +1,4 @@
-package programmers.harshad_number;
+package programmers.level_1.harshad_number;
 
 public class Solution {
     public static void main(String[] args) {

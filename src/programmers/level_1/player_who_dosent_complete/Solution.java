@@ -1,4 +1,4 @@
-package programmers.player_who_dosent_complete;
+package programmers.level_1.player_who_dosent_complete;
 
 import java.util.HashMap;
 import java.util.Map;

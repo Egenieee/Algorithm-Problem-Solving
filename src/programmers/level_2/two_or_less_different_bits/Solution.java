@@ -1,4 +1,4 @@
-package programmers.two_or_less_different_bits;
+package programmers.level_2.two_or_less_different_bits;
 
 import java.util.ArrayList;
 import java.util.List;

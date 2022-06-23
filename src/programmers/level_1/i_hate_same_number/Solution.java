@@ -1,4 +1,4 @@
-package programmers.level_one.i_hate_same_number;
+package programmers.level_1.i_hate_same_number;
 
 import java.util.*;
 

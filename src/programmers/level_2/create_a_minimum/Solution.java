@@ -1,4 +1,4 @@
-package programmers.create_a_minimum;
+package programmers.level_2.create_a_minimum;
 
 import java.util.*;
 

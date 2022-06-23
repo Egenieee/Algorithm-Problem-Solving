@@ -1,4 +1,4 @@
-package programmers.numbers_and_addition_of_divisors;
+package programmers.level_1.numbers_and_addition_of_divisors;
 
 public class Solution {
     public static void main(String[] args) {

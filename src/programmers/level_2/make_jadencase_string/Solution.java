@@ -1,4 +1,4 @@
-package programmers.level_two.make_jadencase_string;
+package programmers.level_2.make_jadencase_string;
 
 public class Solution {
     public static void main(String[] args) {

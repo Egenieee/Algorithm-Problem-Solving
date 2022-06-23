@@ -1,4 +1,4 @@
-package programmers.mock_exam;
+package programmers.level_1.mock_exam;
 
 import java.util.*;
 

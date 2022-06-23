@@ -1,4 +1,4 @@
-package programmers.level_two.menu_renewal;
+package programmers.level_2.menu_renewal;
 
 import java.util.*;
 import java.util.stream.Collectors;

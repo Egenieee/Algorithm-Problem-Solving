@@ -1,4 +1,4 @@
-package programmers.level_two.rank_search;
+package programmers.level_2.rank_search;
 
 // info
 // "java backend junior pizza 150",

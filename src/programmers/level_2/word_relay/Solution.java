@@ -1,4 +1,4 @@
-package programmers.level_two.word_relay;
+package programmers.level_2.word_relay;
 
 import java.util.*;
 

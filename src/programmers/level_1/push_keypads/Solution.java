@@ -1,4 +1,4 @@
-package programmers.level_one.push_keypads;
+package programmers.level_1.push_keypads;
 
 import java.util.ArrayList;
 import java.util.List;

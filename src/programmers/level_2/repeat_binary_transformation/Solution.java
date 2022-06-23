@@ -1,4 +1,4 @@
-package programmers.level_two.repeat_binary_transformation;
+package programmers.level_2.repeat_binary_transformation;
 
 import java.util.Arrays;
 import java.util.List;

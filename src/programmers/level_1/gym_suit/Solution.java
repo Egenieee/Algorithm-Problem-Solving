@@ -1,4 +1,4 @@
-package programmers.level_one.gym_suit;
+package programmers.level_1.gym_suit;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package programmers.failure_rate;
+package programmers.level_1.failure_rate;
 
 import java.util.*;
 

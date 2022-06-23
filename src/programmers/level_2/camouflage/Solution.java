@@ -1,4 +1,4 @@
-package programmers.level_3.camouflage;
+package programmers.level_2.camouflage;
 
 // Map<String, String> clothes = new HashMap<>();
 // <의상 이름, 의상 종류>

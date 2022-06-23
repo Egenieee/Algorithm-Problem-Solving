@@ -1,4 +1,4 @@
-package programmers.one_remainder;
+package programmers.level_1.one_remainder;
 
 public class Solution {
     public static void main(String[] args) {

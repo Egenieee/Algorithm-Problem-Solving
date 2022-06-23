@@ -1,4 +1,4 @@
-package programmers.level_three.best_album;
+package programmers.level_3.best_album;
 
 // input : ["classic", "pop", "classic", "classic", "pop"]	[500, 600, 150, 800, 2500] return:	[4, 1, 3, 0]
 

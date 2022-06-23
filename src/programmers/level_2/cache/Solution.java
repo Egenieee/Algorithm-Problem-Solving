@@ -1,4 +1,4 @@
-package programmers.level_3.cache;
+package programmers.level_2.cache;
 
 import java.util.HashMap;
 import java.util.Locale;
