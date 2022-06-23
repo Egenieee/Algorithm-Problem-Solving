@@ -2,7 +2,7 @@
 #### 알고리즘 문제 풀이
 
 ## programmers
-### Level 1
+### Level 1️⃣
 * [문자열 다루기 기본](https://programmers.co.kr/learn/courses/30/lessons/12918)   
 * [없는 숫자 더하기](https://programmers.co.kr/learn/courses/30/lessons/86051)
 * [수박수박수박수박수박수?](https://programmers.co.kr/learn/courses/30/lessons/12922)   
@@ -40,7 +40,7 @@
 * [체육복](https://programmers.co.kr/learn/courses/30/lessons/42862)
 * [같은 숫자는 싫어](https://programmers.co.kr/learn/courses/30/lessons/12906)
 
-### Level 2
+### Level 2️⃣
 * [JadenCase 문자열 만들기](https://programmers.co.kr/learn/courses/30/lessons/12951/questions)
 * [피보나치 수](https://programmers.co.kr/learn/courses/30/lessons/12945)
 * [최솟값 만들기](https://programmers.co.kr/learn/courses/30/lessons/12941)
@@ -68,7 +68,7 @@
 * [2개 이하로 다른 비트](https://programmers.co.kr/learn/courses/30/lessons/77885) - 실패
 * [순위 검색](https://programmers.co.kr/learn/courses/30/lessons/72412) - 실패
 
-### Level 3
+### Level 3️⃣
 * [베스트앨범](https://programmers.co.kr/learn/courses/30/lessons/42579)
 
 -----
@@ -173,6 +173,7 @@
 -----
 
 ## leetcode
+### Easy 😄
 * [Number of Strings That Appear as Substrings in Word](https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/)
 * [Check if One String Swap Can Make Strings Equal](https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/)
 * [Check If N and Its Double Exist](https://leetcode.com/problems/check-if-n-and-its-double-exist/)
@@ -204,3 +205,21 @@
 * [Word Pattern](https://leetcode.com/problems/word-pattern/)
 * [Move Zeroes](https://leetcode.com/problems/move-zeroes/)
 * [Add Digits](https://leetcode.com/problems/add-digits/)
+* [Valid Anagram](https://leetcode.com/problems/valid-anagram/)
+* [Majority Element](https://leetcode.com/problems/majority-element/)
+* [Min Stack](https://leetcode.com/problems/min-stack/)
+* [Single Number](https://leetcode.com/problems/single-number/)
+* [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
+* [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
+* [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
+* [Add Binary](https://leetcode.com/problems/add-binary/)
+* [Plus One](https://leetcode.com/problems/plus-one/)
+* [Remove Element](https://leetcode.com/problems/remove-element/)
+* [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
+* [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
+* [Roman to Integer](https://leetcode.com/problems/roman-to-integer/)
+* [Palindrome Number](https://leetcode.com/problems/palindrome-number/)
+* [Two Sum](https://leetcode.com/problems/two-sum/)
+
+### Medium 😐
+* [Reverse Integer](https://leetcode.com/problems/reverse-integer/)
