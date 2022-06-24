@@ -39,6 +39,7 @@
 * [키패드 누르기](https://programmers.co.kr/learn/courses/30/lessons/67256)
 * [체육복](https://programmers.co.kr/learn/courses/30/lessons/42862)
 * [같은 숫자는 싫어](https://programmers.co.kr/learn/courses/30/lessons/12906)
+* [직사각형 별찍기](https://programmers.co.kr/learn/courses/30/lessons/12969)
 
 ### Level 2️⃣
 * [JadenCase 문자열 만들기](https://programmers.co.kr/learn/courses/30/lessons/12951/questions)
