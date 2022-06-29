@@ -9,7 +9,7 @@ public class Solution {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.solution("AAAAA"));
+        System.out.println(solution.solution("AAAAB"));
     }
 
     public int solution(String name) {
@@ -49,7 +49,10 @@ public class Solution {
         pointer = 0;
         currentLetter = name.charAt(pointer);
         countOfStickMoveLeft += getMinCount(currentLetter);
-        countOfChange++;
+
+        if (currentLetter != 'A') {
+            countOfChange++;
+        }
 
         // 맨 끝으로 커서 이동
         pointer = name.length() - 1;
