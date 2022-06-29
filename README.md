@@ -73,6 +73,7 @@
 * [다리를 지나는 트럭](https://programmers.co.kr/learn/courses/30/lessons/42583)
 * [H-Index](https://programmers.co.kr/learn/courses/30/lessons/42747)
 * [카펫](https://programmers.co.kr/learn/courses/30/lessons/42842)
+* [조이스틱](https://programmers.co.kr/learn/courses/30/lessons/42860) - 정확도 59% 다시 풀기 
 
 ### Level 3️⃣
 * [베스트앨범](https://programmers.co.kr/learn/courses/30/lessons/42579)
