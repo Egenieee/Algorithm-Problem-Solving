@@ -9,7 +9,7 @@ public class Solution {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.solution("JAZ"));
+        System.out.println(solution.solution("AAAAA"));
     }
 
     public int solution(String name) {
@@ -17,6 +17,10 @@ public class Solution {
         int countOfStickMoveRight = 0;
         int countOfStickMoveLeft = 0;
         int countToChange = getCountToChange(name);
+
+        if (countToChange == 0) {
+            return countOfStickMoveRight;
+        }
 
         boolean directionToRight = true;
         char currentLetter;
@@ -68,8 +72,8 @@ public class Solution {
             countOfStickMoveLeft++;
         }
 
-//        System.out.println("오른쪽 방향으로 갔을 때 : " + countOfStickMoveRight);
-//        System.out.println("왼쪽 방향으로 갔을 때 : " + countOfStickMoveLeft);
+        System.out.println("오른쪽 방향으로 갔을 때 : " + countOfStickMoveRight);
+        System.out.println("왼쪽 방향으로 갔을 때 : " + countOfStickMoveLeft);
 
         return Math.min(countOfStickMoveRight, countOfStickMoveLeft);
     }
