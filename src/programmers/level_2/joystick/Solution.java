@@ -9,36 +9,24 @@ public class Solution {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.solution("GTAS"));
+        System.out.println(solution.solution("JAZ"));
     }
 
     public int solution(String name) {
         int countOfChange = 0;
-        int countOfStickMove = 0;
+        int countOfStickMoveRight = 0;
+        int countOfStickMoveLeft = 0;
         int countToChange = getCountToChange(name);
 
         boolean directionToRight = true;
-        char currentLetter = name.charAt(pointer);
+        char currentLetter;
 
-        // 두번째 글자가 A일 경우
-        if (name.charAt(pointer + 1) == 'A') {
-            countOfStickMove += getMinCount(currentLetter);
-
-            if (currentLetter != 'A') {
-                countOfChange++;
-            }
-
-            directionToRight = false;
-
-            pointer = name.length() - 1;
-            countOfStickMove++;
-        }
-
+        // 오른쪽 방향으로 갔을 때
         while (true) { // 바꾼 알파벳 개수 == 바꿀 알파벳 개수 일치하면 반복문에서 빠져나옴
             currentLetter = name.charAt(pointer);
 
             if (currentLetter != 'A') {
-                countOfStickMove += getMinCount(currentLetter);
+                countOfStickMoveRight += getMinCount(currentLetter);
                 countOfChange++;
             }
 
@@ -47,10 +35,43 @@ public class Solution {
             }
 
             movePointer(directionToRight);
-            countOfStickMove++;
+            countOfStickMoveRight++;
         }
 
-        return countOfStickMove;
+        // 왼쪽 방향으로 갔을 때
+        countOfChange = 0;
+
+        // 맨 처음 글자 변경
+        pointer = 0;
+        currentLetter = name.charAt(pointer);
+        countOfStickMoveLeft += getMinCount(currentLetter);
+        countOfChange++;
+
+        // 맨 끝으로 커서 이동
+        pointer = name.length() - 1;
+        countOfStickMoveLeft++;
+        directionToRight = false;
+
+        while (true) { // 바꾼 알파벳 개수 == 바꿀 알파벳 개수 일치하면 반복문에서 빠져나옴
+            currentLetter = name.charAt(pointer);
+
+            if (currentLetter != 'A') {
+                countOfStickMoveLeft += getMinCount(currentLetter);
+                countOfChange++;
+            }
+
+            if (countToChange == countOfChange) {
+                break;
+            }
+
+            movePointer(directionToRight);
+            countOfStickMoveLeft++;
+        }
+
+//        System.out.println("오른쪽 방향으로 갔을 때 : " + countOfStickMoveRight);
+//        System.out.println("왼쪽 방향으로 갔을 때 : " + countOfStickMoveLeft);
+
+        return Math.min(countOfStickMoveRight, countOfStickMoveLeft);
     }
 
     private int getCountToChange(String name) {
