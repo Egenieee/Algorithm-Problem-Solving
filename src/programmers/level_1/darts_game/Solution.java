@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Solution {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.solution("1D2S#10S"));
+        System.out.println(solution.solution("10S10D#8S*"));
     }
     public int solution(String dartResult) {
         int totalScore;
@@ -28,7 +28,7 @@ public class Solution {
                 } else {
                     if (option == '*') {
                         scores[i] *= 2;
-                        scores[i -1] *= 2;
+                        scores[i - 1] *= 2;
                     } else {
                         scores[i] *= -1;
                     }
@@ -47,17 +47,23 @@ public class Solution {
         int splitStartIdx = 0;
         int splitEndIdx;
 
+        boolean meetBonus = false;
+
         String[] stringScores = new String[3];
 
-        for (int i = 1 ; i < dartResult.length() ; i++) {
-            if (dartResult.charAt(i) - '0' <= 10 && dartResult.charAt(i) - '0' >= 0) {
-                if (idx == 2) {
-                    stringScores[idx] = dartResult.substring(splitStartIdx);
-                } else {
-                    splitEndIdx = i;
-                    stringScores[idx++] = dartResult.substring(splitStartIdx, splitEndIdx);
-                    splitStartIdx = i;
-                }
+        for (int i = 1; i < dartResult.length(); i++) {
+            if (idx == 2) {
+                stringScores[idx] = dartResult.substring(splitStartIdx);
+                break;
+            }
+            if (dartResult.charAt(i) == 'S' || dartResult.charAt(i) == 'D' || dartResult.charAt(i) == 'T') {
+                meetBonus = true;
+            }
+            if (dartResult.charAt(i) - '0' <= 10 && dartResult.charAt(i) - '0' >= 0 && meetBonus) {
+                splitEndIdx = i;
+                stringScores[idx++] = dartResult.substring(splitStartIdx, splitEndIdx);
+                splitStartIdx = i;
+                meetBonus = false;
             }
         }
 
@@ -81,5 +87,4 @@ public class Solution {
         char lastLetter = stringScore.charAt(stringScore.length() - 1);
         return  lastLetter == '*' || lastLetter == '#';
     }
-
 }
