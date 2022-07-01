@@ -43,6 +43,7 @@
 * [정수 내림차순으로 배치하기](https://programmers.co.kr/learn/courses/30/lessons/12933)
 * [나누어 떨어지는 숫자 배열](https://programmers.co.kr/learn/courses/30/lessons/12910)
 * [다트 게임](https://programmers.co.kr/learn/courses/30/lessons/17682)
+* [최소직사각형](https://programmers.co.kr/learn/courses/30/lessons/86491)
 
 ### Level 2️⃣
 * [JadenCase 문자열 만들기](https://programmers.co.kr/learn/courses/30/lessons/12951/questions)
