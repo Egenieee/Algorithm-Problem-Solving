@@ -69,7 +69,7 @@ class Solution {
             // bsf 시작 -> 답 구하기
             int maxAreaCount = getMaxAreaCount(board, n);
 
-            // 출력
+            // test case 마다 답 출력
             System.out.println("#" + test_case + " " + maxAreaCount);
         }
     }
@@ -77,6 +77,7 @@ class Solution {
     private static int getMaxAreaCount(int[][] board, int n) {
         int maxAreaCount = Integer.MIN_VALUE;
 
+        // 현재부터 1년이 지남에 따라 변화하는 구역의 개수 구하기 -> 가장 많은 구역의 개수 구하기
         for (int curYear = 0 ; true ; curYear++) {
             int areaCount = getAreaCount(board, n, curYear);
 
@@ -86,6 +87,7 @@ class Solution {
                 maxAreaCount = areaCount;
             }
 
+            // 모두 물에 잠기면 반복문 종료
             if (areaCount == 0) {
                 break;
             }
@@ -108,22 +110,36 @@ class Solution {
 
         for (int i = 0 ; i < n ; i ++) {
             for (int j = 0 ; j < n ; j++) {
+                // 현재 보고 있는 땅이 물에 잠기었거나 이미 방문한 땅이면 bfs 시작 안함
                 if (board[i][j] <= curYear || visited[i][j]) {
                     continue;
                 }
+
+                // bfs 시작 -> 구역의 개수 하나 증가
                 countOfArea++;
+
+                // 현재 좌표 큐에 삽입
                 queue.add(new Point(i, j));
+
+                // 방문했다고 표시
                 visited[i][j] = true;
 
+                // 하나의 연결된 구역 찾는 반복문
                 while (!queue.isEmpty()) {
+                    // 큐에서 땅 하나 꺼내와서
                     Point curPoint = queue.poll();
+
+                    // 하, 우, 상, 좌의 땅을 살펴본다.
                     for (int dir = 0 ; dir < 4 ; dir++) {
                         int nX = curPoint.getX() + dx[dir];
                         int nY = curPoint.getY() + dy[dir];
 
+                        // nX와 nY가 땅 범위 밖으로 넘어갔다면 패스
                         if (nX < 0 || nX >= n || nY < 0 || nY >= n ) {
                             continue;
                         }
+
+                        // 방문하지 않았고, 물에 잠기지 않은 땅이라면 큐에 넣는다.
                         if (visited[nX][nY] || board[nX][nY] <= curYear) {
                             continue;
                         }
