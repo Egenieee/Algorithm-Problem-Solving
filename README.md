@@ -179,6 +179,7 @@
 * [다음 팰린드롬 수](https://www.acmicpc.net/problem/1334) - 실패. 다시 풀기
 * [수 이어 쓰기](https://www.acmicpc.net/problem/1515)
 * [단지번호붙이기](https://www.acmicpc.net/problem/2667)
+* [유기농 배추](https://www.acmicpc.net/problem/1012)
 
 
 -----
