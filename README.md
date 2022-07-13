@@ -76,6 +76,7 @@
 * [H-Index](https://programmers.co.kr/learn/courses/30/lessons/42747)
 * [카펫](https://programmers.co.kr/learn/courses/30/lessons/42842)
 * [조이스틱](https://programmers.co.kr/learn/courses/30/lessons/42860) - 정확도 59% 다시 풀기 
+* [카카오 프렌즈 컬러링북](https://school.programmers.co.kr/learn/courses/30/lessons/1829)
 
 ### Level 3️⃣
 * [베스트앨범](https://programmers.co.kr/learn/courses/30/lessons/42579)
