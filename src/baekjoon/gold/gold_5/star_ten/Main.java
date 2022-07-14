@@ -1,4 +1,4 @@
-package baekjoon.silver.silver_1.star_ten;
+package baekjoon.gold.gold_5.star_ten;
 
 import java.io.*;
 
