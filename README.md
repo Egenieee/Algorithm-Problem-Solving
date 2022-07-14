@@ -180,6 +180,7 @@
 * [수 이어 쓰기](https://www.acmicpc.net/problem/1515)
 * [단지번호붙이기](https://www.acmicpc.net/problem/2667)
 * [유기농 배추](https://www.acmicpc.net/problem/1012)
+* [숨바꼭질](https://www.acmicpc.net/problem/1697)
 
 
 -----

@@ -17,7 +17,7 @@ public class Main {
         int k = Integer.parseInt(st.nextToken());
 
         int[] time = new int[100001];
-        Arrays.fill(time, Integer.MAX_VALUE);
+        Arrays.fill(time, -1);
 
         Queue<Integer> queue = new LinkedList<>();
 
@@ -31,12 +31,13 @@ public class Main {
         while (!queue.isEmpty()) {
             int currentX = queue.poll();
 
-            // 좌, 우 움직여서 초 수 기록, 뒤늦게 기록하게 된다면 더 적은 초로 도달할 수 있는 지 기록한다.
+            // 좌, 우 움직여서 초 수 기록
             for (int dir = 0; dir < 2; dir++) {
                 seconds = time[currentX];
                 int nX = currentX + dx[dir];
 
-                if (nX < 0 || nX >= 100001 || time[nX] <= seconds) {
+                // 이동 후 범위 밖을 벗어나거나 이미 기록된 자리면 패스
+                if (nX < 0 || nX >= 100001 || time[nX] != -1) {
                     continue;
                 }
 
@@ -44,16 +45,29 @@ public class Main {
                 queue.add(nX);
             }
 
+            // 순간이동하는 경우
             seconds = time[currentX];
             int move = currentX * 2;
 
-            if (move >= 100001 || time[move] <= seconds) {
+            // 이동 후 범위 밖을 벗어나거나 이미 기록된 자리면 패스
+            if (move >= 100001 || time[move] != -1) {
                 continue;
             }
 
             time[move] = ++seconds;
             queue.add(move);
+
+            // k번째 인덱스까지 초가 기록되면 반복문 종료
+            if (time[k] != -1) {
+                break;
+            }
         }
+
+//        for (int i = 0 ; i < 21 ; i++) {
+//            System.out.print(time[i] + " ");
+//        }
+//
+//        System.out.println();
 
         bw.write(String.valueOf(time[k]));
         bw.flush();
