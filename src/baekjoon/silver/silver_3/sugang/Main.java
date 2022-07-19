@@ -1,7 +1,9 @@
 package baekjoon.silver.silver_3.sugang;
 
 import java.io.*;
-import java.util.*;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.StringTokenizer;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -12,17 +14,22 @@ public class Main {
         int limit = Integer.parseInt(st.nextToken());
         int numberOfClick = Integer.parseInt(st.nextToken());
 
-        Map<String, Integer> suGang = new HashMap<>();
+        Set<String> suGang = new LinkedHashSet<>();
 
         for (int i = 0; i < numberOfClick; i++) {
-            suGang.put(br.readLine(), i);
+            String id = br.readLine();
+            suGang.remove(id);
+            suGang.add(id);
         }
 
-        List<Map.Entry<String, Integer>> entryList = new LinkedList<>(suGang.entrySet());
-        entryList.sort(Map.Entry.comparingByValue());
+        int count = 0;
 
-        for (int i = 0; i < limit; i++) {
-            bw.write(entryList.get(i).getKey() + "\n");
+        for (String s : suGang) {
+            bw.write(s + "\n");
+            count++;
+            if (count >= limit) {
+                break;
+            }
         }
 
         bw.flush();
