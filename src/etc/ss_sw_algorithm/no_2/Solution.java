@@ -32,10 +32,14 @@ public class Solution {
             int m = Integer.parseInt(st.nextToken());
             //System.out.println(test_case + " " + Integer.toBinaryString(m));
 
-            int nToBinary = getBinary(n);
-            int bitAnd = (m & nToBinary);
+            // n을 십진수 숫자로 변환한다. 예를들어 3이면 111 -> 7로 변환한다.
+            int nToDecimal = getDecimalNumber(n);
 
-            if (bitAnd == nToBinary) {
+            // 그러고 m과 and 연산을 진행한다.
+            int bitAnd = (m & nToDecimal);
+
+            // 결과 값으로 나온 값이 모두 1이라면(위에서 구한 nToDecimal이라면), m의 마지막 n개의 비트가 모두 1이란 뜻이 되므로 ON을 출력한다.
+            if (bitAnd == nToDecimal) {
                 System.out.println("#" + test_case + " ON");
             } else {
                 System.out.println("#" + test_case + " OFF");
@@ -43,7 +47,7 @@ public class Solution {
         }
     }
 
-    private static int getBinary(int digitCount) {
+    private static int getDecimalNumber(int digitCount) {
         int sum = 0;
         for (int i = 0; i < digitCount; i++) {
             sum += Math.pow(2, i);
