@@ -29,6 +29,8 @@ public class UserSolution {
     public void init() {
         head = null;
         tail = null;
+        nodeCnt = 0;
+        node = new Node[MAX_NODE];
     }
 
     public void addNode2Head(int data) {
@@ -59,11 +61,6 @@ public class UserSolution {
             return;
         }
 
-        if (num == nodeCnt) {
-            addNode2Tail(data);
-            return;
-        }
-
         int count = 1;
         Node pointNode = head;
         Node prevNode = null;
@@ -87,6 +84,10 @@ public class UserSolution {
 
         prevNode.next = newNode;
         newNode.next = nextNode;
+
+        if (nextNode == null) {
+            tail = newNode;
+        }
 
     }
 
@@ -139,6 +140,6 @@ public class UserSolution {
             pointNode = pointNode.next;
         }
 
-        return ++idx;
+        return idx;
     }
 }
