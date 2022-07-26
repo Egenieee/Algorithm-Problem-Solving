@@ -6,6 +6,22 @@ import java.util.List;
 import java.util.PriorityQueue;
 
 public class Solution {
+    // 선의 번호와 가중치를 한번에 저장하기 위해 Edge class를 만듦.
+    static class Edge implements Comparable<Edge> {
+        int number;
+        int hour;
+
+        public Edge(int number, int hour) {
+            this.number = number;
+            this.hour = hour;
+        }
+
+        @Override
+        public int compareTo(Edge edge) {
+            return this.hour - edge.hour;
+        }
+    }
+
     public static void main(String[] args) {
         Solution solution = new Solution();
         int answer = solution.solution(6, new int[][]{{1, 2, 1}, {1, 3, 2}, {2, 3, 2}, {3, 4, 3}, {3, 5, 2}, {3, 5, 3}, {5, 6, 1}}, 4);
@@ -87,21 +103,4 @@ public class Solution {
 
         return validDelivery;
     }
-
-    // 선의 번호와 가중치를 한번에 저장하기 위해 Edge class를 만듦.
-    static class Edge implements Comparable<Edge> {
-        int number;
-        int hour;
-
-        public Edge(int number, int hour) {
-            this.number = number;
-            this.hour = hour;
-        }
-
-        @Override
-        public int compareTo(Edge edge) {
-            return this.hour - edge.hour;
-        }
-    }
-
 }
