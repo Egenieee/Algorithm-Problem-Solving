@@ -179,10 +179,11 @@
 * [팰린드롬 만들기](https://www.acmicpc.net/problem/1213)
 * [다음 팰린드롬 수](https://www.acmicpc.net/problem/1334) - 실패. 다시 풀기
 * [수 이어 쓰기](https://www.acmicpc.net/problem/1515)
-* [단지번호붙이기](https://www.acmicpc.net/problem/2667)
-* [유기농 배추](https://www.acmicpc.net/problem/1012)
-* [숨바꼭질](https://www.acmicpc.net/problem/1697)
-* [친구 네트워크](https://www.acmicpc.net/problem/4195)
+* [단지번호붙이기](https://www.acmicpc.net/problem/2667) - BFS
+* [유기농 배추](https://www.acmicpc.net/problem/1012) - BFS
+* [숨바꼭질](https://www.acmicpc.net/problem/1697) - BFS
+* [친구 네트워크](https://www.acmicpc.net/problem/4195) - union find
+* [수 찾기](https://www.acmicpc.net/problem/1920) - Binary search
 
 
 -----
