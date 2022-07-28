@@ -108,7 +108,19 @@ public class UserSolution {
     }
 
     public int findNode(int data) {
-        return 0;
+        int order = 0;
+
+        Node pointNode = null;
+
+        while (pointNode != null) {
+            if (pointNode.data == data) {
+                break;
+            }
+            order++;
+            pointNode = pointNode.next;
+        }
+
+        return order;
     }
 
     public void removeNode(int data) {
