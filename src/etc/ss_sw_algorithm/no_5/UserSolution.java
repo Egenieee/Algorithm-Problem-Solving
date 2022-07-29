@@ -38,15 +38,15 @@ public class UserSolution {
         Node nextNode = head;
 
         newNode.next = nextNode;
-        newNode.prev = head;
 
-        nextNode.prev = newNode;
+        if (nextNode != null) {
+            nextNode.prev = newNode;
+        }
 
         head = newNode;
 
         if (newNode.next == null) {
             tail = head;
-            newNode.next = tail;
         }
     }
 
@@ -59,9 +59,10 @@ public class UserSolution {
         Node newNode = getNode(data);
 
         Node prevNode = tail;
-        prevNode.next = newNode;
 
-        newNode.next = tail;
+        prevNode.next = newNode;
+        newNode.prev = prevNode;
+
         tail = newNode;
     }
 
@@ -71,18 +72,15 @@ public class UserSolution {
             return;
         }
 
-        if (num == nodeCnt) {
-            addNode2Tail(data);
-            return;
-        }
-
-        int count = 0;
+        int count = 1;
         Node pointNode = head;
         Node prevNode = null;
+        Node nextNode = null;
 
         while (pointNode != null) {
             if (count == num - 1) {
-                prevNode = pointNode.prev;
+                prevNode = pointNode;
+                nextNode = pointNode.next;
                 break;
             }
             count++;
@@ -95,43 +93,100 @@ public class UserSolution {
 
         Node newNode = getNode(data);
 
-        pointNode.prev = newNode;
+        if (nextNode != null) {
+            nextNode.prev = newNode;
+        }
+
         prevNode.next = newNode;
-
         newNode.prev = prevNode;
-        newNode.next = pointNode;
+        newNode.next = nextNode;
 
-//        if (pointNode.next == null) {
-//            tail = pointNode;
-//        }
-
+        if (nextNode == null) {
+            tail = newNode;
+        }
     }
 
     public int findNode(int data) {
-        int order = 0;
+        int order = 1;
 
-        Node pointNode = null;
+        Node pointNode = head;
 
         while (pointNode != null) {
             if (pointNode.data == data) {
-                break;
+                return order;
             }
             order++;
             pointNode = pointNode.next;
         }
 
-        return order;
+        return -1;
     }
 
     public void removeNode(int data) {
+        Node pointNode = head;
+        Node prevNode;
+        Node nextNode;
 
+        while (pointNode != null) {
+            if (pointNode.data == data) {
+                break;
+            }
+            pointNode = pointNode.next;
+        }
+
+        if (pointNode == null) {
+            return;
+        }
+
+        if (pointNode == head) {
+            head = pointNode.next;
+            pointNode.next = null;
+            pointNode.prev = null;
+            nodeCnt--;
+            return;
+        }
+
+        nextNode = pointNode.next;
+        prevNode = pointNode.prev;
+
+        prevNode.next = nextNode;
+
+        if (nextNode != null) {
+            nextNode.prev = prevNode;
+        }
+
+        if (prevNode.next == null) {
+            tail = prevNode;
+        }
+
+        pointNode.prev = null;
+        pointNode.next = null;
+        nodeCnt--;
     }
 
     public int getList(int[] output) {
-        return 0;
+        int idx = 0;
+
+        Node pointNode = head;
+
+        while (pointNode != null) {
+            output[idx++] = pointNode.data;
+            pointNode = pointNode.next;
+        }
+
+        return idx;
     }
 
     public int getReversedList(int[] output) {
-        return 0;
+        int idx = 0;
+
+        Node pointNode = tail;
+
+        while (pointNode != null) {
+            output[idx++] = pointNode.data;
+            pointNode = pointNode.prev;
+        }
+
+        return idx;
     }
 }
