@@ -1,38 +1,34 @@
 package programmers.etc.mock_test_second.no_2;
 
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class Solution {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.solution(new int[]{1, 2, 3, 1, 4}));
+        System.out.println(solution.solution(new int[]{1, 1, 2, 1, 1, 3, 4, 2, 5}));
     }
 
     public int solution(int[] topping) {
         int answer = 0;
+        Map<Integer, Integer> splitLeft = new LinkedHashMap<>();
+        Map<Integer, Integer> splitRight = new LinkedHashMap<>();
 
-        for (int splitIdx = 1; splitIdx < topping.length; splitIdx++) {
-            if (isFairDivision(splitIdx, topping)) {
+        for (int num : topping) {
+            splitRight.put(num, splitRight.getOrDefault(num, 0) + 1);
+        }
+        for (int num : topping) {
+            splitLeft.put(num, splitLeft.getOrDefault(num, 0) + 1);
+            splitRight.put(num, splitRight.getOrDefault(num, 0) - 1);
+            if (splitRight.get(num) == 0) {
+                splitRight.remove(num);
+            }
+
+            if (splitLeft.size() == splitRight.size()) {
                 answer++;
             }
         }
 
         return answer;
-    }
-
-    private boolean isFairDivision(int splitIdx, int[] topping) {
-        Map<Integer, Integer> toppingTypeOne = new HashMap<>();
-        Map<Integer, Integer> toppingTypeTwo = new HashMap<>();
-
-        for (int i = 0; i < splitIdx; i++) {
-            toppingTypeOne.put(topping[i], toppingTypeOne.getOrDefault(topping[i], 0) + 1);
-        }
-
-        for (int i = splitIdx; i < topping.length; i++) {
-            toppingTypeTwo.put(topping[i], toppingTypeTwo.getOrDefault(topping[i], 0) + 1);
-        }
-
-        return toppingTypeOne.size() == toppingTypeTwo.size();
     }
 }
