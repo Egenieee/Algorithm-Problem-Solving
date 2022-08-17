@@ -6,7 +6,7 @@ import java.util.Stack;
 public class Solution {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.solution(new int[]{1, 3, 1, 2, 1, 1, 3, 2, 1}));
+        System.out.println(solution.solution(new int[]{1, 2, 3, 1, 2, 3, 1, 1}));
     }
 
     public int solution(int[] ingredients) {
