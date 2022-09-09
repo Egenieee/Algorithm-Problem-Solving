@@ -47,7 +47,7 @@
 * [성격 유형 검사하기](https://school.programmers.co.kr/learn/courses/30/lessons/118666?language=java)
 
 ### Level 2️⃣
-* [JadenCase 문자열 만들기](https://programmers.co.kr/learn/courses/30/lessons/12951/questions)
+* [JadenCase 문자열 만들기](https://programmers.co.kr/learn/courses/30/lessons/12951)
 * [피보나치 수](https://programmers.co.kr/learn/courses/30/lessons/12945)
 * [최솟값 만들기](https://programmers.co.kr/learn/courses/30/lessons/12941)
 * [주차 요금 계산](https://programmers.co.kr/learn/courses/30/lessons/92341)
