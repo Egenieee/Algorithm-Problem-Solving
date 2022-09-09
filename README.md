@@ -44,6 +44,7 @@
 * [나누어 떨어지는 숫자 배열](https://programmers.co.kr/learn/courses/30/lessons/12910)
 * [다트 게임](https://programmers.co.kr/learn/courses/30/lessons/17682)
 * [최소직사각형](https://programmers.co.kr/learn/courses/30/lessons/86491)
+* [성격 유형 검사하기](https://school.programmers.co.kr/learn/courses/30/lessons/118666?language=java)
 
 ### Level 2️⃣
 * [JadenCase 문자열 만들기](https://programmers.co.kr/learn/courses/30/lessons/12951/questions)
