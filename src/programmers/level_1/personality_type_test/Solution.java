@@ -44,10 +44,10 @@ public class Solution {
 
         if (choice < SCORE_STANDARD) {
             score = -(choice - SCORE_STANDARD);
-            scoreTable.put(firstIndicator, score);
+            scoreTable.put(firstIndicator, scoreTable.getOrDefault(firstIndicator, 0) + score);
         } else {
             score = choice - SCORE_STANDARD;
-            scoreTable.put(secondIndicator, score);
+            scoreTable.put(secondIndicator, scoreTable.getOrDefault(secondIndicator, 0) + score);
         }
     }
 
