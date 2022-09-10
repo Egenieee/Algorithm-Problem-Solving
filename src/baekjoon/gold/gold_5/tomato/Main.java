@@ -54,7 +54,7 @@ public class Main {
             st = new StringTokenizer(br.readLine());
             for (int j = 0; j < M; j++) {
                 tomato = Integer.parseInt(st.nextToken());
-                if (tomato == 1) { // 익은 토마토 위치 큐에 저장한다.
+                if (tomato == 1) { // 익은 토마토 위치를 큐에 저장한다.
                     queue.add(new Point(i, j));
                 }
                 if (tomato == 0) { // 익지 않은 토마토는 -1로 일 수를 설정한다.
@@ -95,7 +95,9 @@ public class Main {
             for (int j = 0; j < M; j++) {
                 if (days[i][j] == -1) { // 배열에 -1가 있다면 모든 토마토가 익지 않은 것이므로 -1를 반환한다.
                     bw.write(String.valueOf(-1));
-                    break;
+                    bw.flush();
+                    bw.close();
+                    return;
                 }
                 // days 배열의 최대 일 수를 구해서 리턴한다.
                 day = Math.max(day, days[i][j]);
@@ -105,7 +107,5 @@ public class Main {
         bw.write(String.valueOf(day));
         bw.flush();
         bw.close();
-
-
     }
 }
