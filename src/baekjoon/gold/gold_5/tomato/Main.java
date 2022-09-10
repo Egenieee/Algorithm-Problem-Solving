@@ -1,11 +1,31 @@
 package baekjoon.gold.gold_5.tomato;
 
 import java.io.*;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.StringTokenizer;
 
 public class Main {
     static int[][] fields;
-    static int days = 0;
+    static int[][] days;
+
+    static class Point {
+        int x;
+        int y;
+
+        public Point(int x, int y) {
+            this.x = x;
+            this.y = y;
+        }
+
+        public int getX() {
+            return x;
+        }
+
+        public int getY() {
+            return y;
+        }
+    }
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -19,89 +39,73 @@ public class Main {
         int N = Integer.parseInt(st.nextToken());
 
         int tomato;
-        int countOfTomato = 0;
-        int countOfYesterday = 0;
+
+        int[] dx = {1, 0, -1, 0};
+        int[] dy = {0, 1, 0, -1};
 
         fields = new int[N][M];
+        days = new int[N][M];
+
+        int day = 0;
+
+        Queue<Point> queue = new LinkedList<>();
 
         for (int i = 0; i < N; i++) {
             st = new StringTokenizer(br.readLine());
             for (int j = 0; j < M; j++) {
                 tomato = Integer.parseInt(st.nextToken());
-                if (tomato != -1) {
-                    countOfTomato++;
+                if (tomato == 1) { // 익은 토마토 위치 큐에 저장한다.
+                    queue.add(new Point(i, j));
+                }
+                if (tomato == 0) { // 익지 않은 토마토는 -1로 일 수를 설정한다.
+                    days[i][j] = -1;
                 }
                 fields[i][j] = tomato;
             }
         }
 
-        while (true) {
-            int count = oneDayPassed(fields, N, M);
+        while (!queue.isEmpty()) {
+            // 큐에서 익은 토마토 하나 꺼낸다.
+            Point point = queue.poll();
 
-            if (count == countOfTomato && days == 0) {
-                bw.write(String.valueOf(0));
-                break;
-            }
+            // 익은 토마토의 상하좌우 위치를 구한다.
+            for (int dir = 0; dir < 4; dir++) {
+                int nX = point.getX() + dx[dir];
+                int nY = point.getY() + dy[dir];
 
-            if (count == countOfYesterday) {
-                bw.write(String.valueOf(-1));
-                break;
-            }
-
-            days++;
-
-            if (count == countOfTomato) {
-                bw.write(String.valueOf(days));
-                break;
-            }
-
-            countOfYesterday = count;
-        }
-
-        bw.flush();
-        bw.close();
-
-        // 날이 갔음에도 토마토의 개수가 변함이 없으면 -1 리턴하고, 날이 갔음에도 하루 처음 토마토 개수를 셌을 때와 똑같으면 0리턴
-
-    }
-
-    // 하루가 지났을 때 익은 토마토 개수를 반환하는 함수
-    private static int oneDayPassed(int[][] fields, int N, int M) {
-        int countOfTomato = 0;
-
-        boolean[][] visited = new boolean[N][M];
-
-        int[] dx = {1, 0, -1, 0};
-        int[] dy = {0, 1, 0, -1};
-
-        for (int i = 0; i < N; i++) {
-            for (int j = 0; j < M; j++) {
-                if (fields[i][j] != 1 || visited[i][j] || fields[i][j] == 0) {
+                // 토마토 상자 범위를 벗어나면 pass
+                if (nX < 0 || nX >= N || nY < 0 || nY >= M) {
                     continue;
                 }
 
-                countOfTomato++;
-
-                visited[i][j] = true;
-
-                // 상하좌우 한번만 보고 바꾼다. -> 하루가 지나면 근접한 토마토만 익으므로,,
-                for (int dir = 0; dir < 4; dir++) {
-                    int nX = i + dx[dir];
-                    int nY = j + dy[dir];
-
-                    if (nX < 0 || nX >= N || nY < 0 || nY >= M) {
-                        continue;
-                    }
-
-                    if (fields[nX][nY] == 0) { // 안익은 토마토가 근접해 있을 경우 익게한다.
-                        countOfTomato++;
-                        fields[nX][nY] = 1;
-                        visited[nX][nY] = true;
-                    }
+                // 일 수가 이미 구해졌다면 pass
+                if (days[nX][nY] >= 0) {
+                    continue;
                 }
+
+                // 상하좌우의 토마토가 익는 데 걸리는 시간을 (큐에서 꺼낸 익은 토마토의 현재 일 수 + 1로) 설정한다.
+                days[nX][nY] = days[point.getX()][point.getY()] + 1;
+                // 그런 뒤에 큐에 넣어준다.
+                queue.add(new Point(nX, nY));
             }
         }
 
-        return countOfTomato;
+        // 큐가 빌 때 까지 위의 과정을 반복한뒤, days 배열을 순회한다.
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < M; j++) {
+                if (days[i][j] == -1) { // 배열에 -1가 있다면 모든 토마토가 익지 않은 것이므로 -1를 반환한다.
+                    bw.write(String.valueOf(-1));
+                    break;
+                }
+                // days 배열의 최대 일 수를 구해서 리턴한다.
+                day = Math.max(day, days[i][j]);
+            }
+        }
+
+        bw.write(String.valueOf(day));
+        bw.flush();
+        bw.close();
+
+
     }
 }
