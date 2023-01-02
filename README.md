@@ -1,12 +1,19 @@
 # Algorithm-Problem-Solving
+
 #### 알고리즘 문제 풀이
 
 ## programmers
+
+### Level 0️⃣
+
+* [옹알이 (1)](https://school.programmers.co.kr/learn/courses/30/lessons/120956)
+
 ### Level 1️⃣
-* [문자열 다루기 기본](https://programmers.co.kr/learn/courses/30/lessons/12918)   
+
+* [문자열 다루기 기본](https://programmers.co.kr/learn/courses/30/lessons/12918)
 * [없는 숫자 더하기](https://programmers.co.kr/learn/courses/30/lessons/86051)
-* [수박수박수박수박수박수?](https://programmers.co.kr/learn/courses/30/lessons/12922)   
-* [나머지가 1이 되는 수 찾기](https://programmers.co.kr/learn/courses/30/lessons/87389)   
+* [수박수박수박수박수박수?](https://programmers.co.kr/learn/courses/30/lessons/12922)
+* [나머지가 1이 되는 수 찾기](https://programmers.co.kr/learn/courses/30/lessons/87389)
 * [2016년](https://programmers.co.kr/learn/courses/30/lessons/87389)
 * [두 개 뽑아서 더하기](https://programmers.co.kr/learn/courses/30/lessons/68644)
 * [신고 결과 받기](https://programmers.co.kr/learn/courses/30/lessons/92334)
