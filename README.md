@@ -7,6 +7,7 @@
 ### Level 0️⃣
 
 * [옹알이 (1)](https://school.programmers.co.kr/learn/courses/30/lessons/120956)
+* [OX퀴즈](https://school.programmers.co.kr/learn/courses/30/lessons/120907)
 
 ### Level 1️⃣
 
