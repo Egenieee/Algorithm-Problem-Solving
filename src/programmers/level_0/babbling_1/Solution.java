@@ -1,4 +1,4 @@
-package programmers.level_0.babbling;
+package programmers.level_0.babbling_1;
 
 // babbling의 각 문자열에서 "aya", "ye", "woo", "ma"는 각각 최대 한 번씩만 등장합니다
 
