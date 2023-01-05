@@ -1,4 +1,4 @@
-package programmers.level_1.nearest_letter;
+package programmers.level_1.nearest_same_letter;
 
 import java.util.ArrayList;
 import java.util.HashMap;
