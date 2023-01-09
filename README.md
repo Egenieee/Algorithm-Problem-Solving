@@ -92,6 +92,7 @@
 * [카카오 프렌즈 컬러링북](https://school.programmers.co.kr/learn/courses/30/lessons/1829)
 * [배달](https://school.programmers.co.kr/learn/courses/30/lessons/12978)
 * [N-Queen](https://school.programmers.co.kr/learn/courses/30/lessons/12952)
+* [귤 고르기](https://school.programmers.co.kr/learn/courses/30/lessons/138476)
 
 ### Level 3️⃣
 * [베스트앨범](https://programmers.co.kr/learn/courses/30/lessons/42579)
