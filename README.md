@@ -10,6 +10,7 @@
 * [OX퀴즈](https://school.programmers.co.kr/learn/courses/30/lessons/120907)
 * [최빈값 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/120812)
 * [7의 개수](https://school.programmers.co.kr/learn/courses/30/lessons/120912)
+* [피자 나눠먹기 (1)](https://school.programmers.co.kr/learn/courses/30/lessons/120814)
 
 ### Level 1️⃣
 
