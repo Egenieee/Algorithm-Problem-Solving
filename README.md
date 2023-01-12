@@ -11,6 +11,7 @@
 * [최빈값 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/120812)
 * [7의 개수](https://school.programmers.co.kr/learn/courses/30/lessons/120912)
 * [피자 나눠먹기 (1)](https://school.programmers.co.kr/learn/courses/30/lessons/120814)
+* [아이스 아메리카노](https://school.programmers.co.kr/learn/courses/30/lessons/120819)
 
 ### Level 1️⃣
 
