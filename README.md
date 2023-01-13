@@ -59,6 +59,7 @@
 * [성격 유형 검사하기](https://school.programmers.co.kr/learn/courses/30/lessons/118666?language=java)
 * [옹알이(2)](https://school.programmers.co.kr/learn/courses/30/lessons/133499)
 * [가장 가까운 같은 글자](https://school.programmers.co.kr/learn/courses/30/lessons/142086)
+* [문자열 나누기](https://school.programmers.co.kr/learn/courses/30/lessons/140108)
 
 ### Level 2️⃣
 * [JadenCase 문자열 만들기](https://programmers.co.kr/learn/courses/30/lessons/12951)
