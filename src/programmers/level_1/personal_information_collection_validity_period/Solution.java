@@ -17,7 +17,7 @@ public class Solution {
     public List<Integer> solution(String today, String[] terms, String[] privacies) {
         List<Integer> informationToDestroy = new ArrayList<>();
 
-        LocalDate todayDate = getDateFormat(today);
+        LocalDate todayDate = getLocalDateFormat(today);
         Map<String, Integer> validityPeriod = getValidityPeriodTable(terms);
 
         for (int i = 0; i < privacies.length; i++) {
@@ -32,25 +32,26 @@ public class Solution {
     private boolean isExpiredInformation(String eachPrivacy, Map<String, Integer> validityPeriod, LocalDate todayDate) {
         String[] privacy = eachPrivacy.split(" ");
 
-        LocalDate date = getDateFormat(privacy[0]);
+        LocalDate date = getLocalDateFormat(privacy[0]);
         int monthToAdd = validityPeriod.get(privacy[1]);
 
-        LocalDate dateNew = date.plusMonths(monthToAdd).minusDays(1);
+        LocalDate addedDate = date.plusMonths(monthToAdd).minusDays(1);
 
-        return dateNew.isBefore(todayDate);
+        return addedDate.isBefore(todayDate);
     }
 
-    private LocalDate getDateFormat(String today) {
+    private LocalDate getLocalDateFormat(String date) {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy.MM.dd");
         LocalDate localDate = null;
 
         try {
-            Date todayDate = simpleDateFormat.parse(today);
+            Date todayDate = simpleDateFormat.parse(date);
 
             // Date -> LocalDate 변환
             localDate = todayDate.toInstant()   // Date -> Instant
                     .atZone(ZoneId.systemDefault())  // Instant -> ZonedDateTime
                     .toLocalDate(); // ZonedDateTime -> LocalDate
+
         } catch (ParseException exception) {
             exception.printStackTrace();
         }
