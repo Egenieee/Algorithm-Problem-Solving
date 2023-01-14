@@ -60,6 +60,7 @@
 * [옹알이(2)](https://school.programmers.co.kr/learn/courses/30/lessons/133499)
 * [가장 가까운 같은 글자](https://school.programmers.co.kr/learn/courses/30/lessons/142086)
 * [문자열 나누기](https://school.programmers.co.kr/learn/courses/30/lessons/140108)
+* [개인정보 수집 유효기간](https://school.programmers.co.kr/learn/courses/30/lessons/150370)
 
 ### Level 2️⃣
 * [JadenCase 문자열 만들기](https://programmers.co.kr/learn/courses/30/lessons/12951)
