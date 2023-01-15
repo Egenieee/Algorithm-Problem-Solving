@@ -13,6 +13,7 @@
 * [피자 나눠먹기 (1)](https://school.programmers.co.kr/learn/courses/30/lessons/120814)
 * [아이스 아메리카노](https://school.programmers.co.kr/learn/courses/30/lessons/120819)
 * [개미군단](https://school.programmers.co.kr/learn/courses/30/lessons/120837)
+* [모스부호 (1)](https://school.programmers.co.kr/learn/courses/30/lessons/120838)
 
 ### Level 1️⃣
 
