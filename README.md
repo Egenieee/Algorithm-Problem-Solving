@@ -16,6 +16,7 @@
 * [모스부호 (1)](https://school.programmers.co.kr/learn/courses/30/lessons/120838)
 * [가위바위보](https://school.programmers.co.kr/learn/courses/30/lessons/120839)
 * [2차원으로 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/120842)
+* [등수 매기기](https://school.programmers.co.kr/learn/courses/30/lessons/120882)
 
 ### Level 1️⃣
 
