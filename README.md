@@ -17,6 +17,7 @@
 * [가위바위보](https://school.programmers.co.kr/learn/courses/30/lessons/120839)
 * [2차원으로 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/120842)
 * [등수 매기기](https://school.programmers.co.kr/learn/courses/30/lessons/120882)
+* [문자열 계산하기](https://school.programmers.co.kr/learn/courses/30/lessons/120902)
 
 ### Level 1️⃣
 
