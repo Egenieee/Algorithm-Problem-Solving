@@ -3,24 +3,29 @@ package programmers.level_0.calculating_string;
 public class Solution {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.solution("-3 - 7"));
+        System.out.println(solution.solution("1 + 2 + 3 - 4"));
     }
 
     public int solution(String my_string) {
         String[] formula = my_string.split(" ");
+        int result = Integer.parseInt(formula[0]);
 
-        if (formula[1].equals("+")) {
-            return plusResult(formula);
+        for (int index = 1; index < formula.length; index += 2) {
+            if (formula[index].equals("+")) {
+                result = plusResult(formula, index, result);
+            } else {
+                result = minusResult(formula, index, result);
+            }
         }
 
-        return minusResult(formula);
+        return result;
     }
 
-    private int plusResult(String[] formula) {
-        return Integer.parseInt(formula[0]) + Integer.parseInt(formula[2]);
+    private int plusResult(String[] formula, int index, int number) {
+        return number + Integer.parseInt(formula[index + 1]);
     }
 
-    private int minusResult(String[] formula) {
-        return Integer.parseInt(formula[0]) - Integer.parseInt(formula[2]);
+    private int minusResult(String[] formula, int index, int number) {
+        return number - Integer.parseInt(formula[index + 1]);
     }
 }
