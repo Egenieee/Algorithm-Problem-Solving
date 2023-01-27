@@ -22,6 +22,7 @@
 * [영어가 싫어요](https://school.programmers.co.kr/learn/courses/30/lessons/120894)
 * [A로 B 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/120886)
 * [369게임](https://school.programmers.co.kr/learn/courses/30/lessons/120891)
+* [모음 제거](https://school.programmers.co.kr/learn/courses/30/lessons/120849)
 
 ### Level 1️⃣
 
