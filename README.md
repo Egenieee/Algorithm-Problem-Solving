@@ -24,6 +24,7 @@
 * [369게임](https://school.programmers.co.kr/learn/courses/30/lessons/120891)
 * [모음 제거](https://school.programmers.co.kr/learn/courses/30/lessons/120849)
 * [로그인 성공?](https://school.programmers.co.kr/learn/courses/30/lessons/120883)
+* [외계어 사전](https://school.programmers.co.kr/learn/courses/30/lessons/120869)
 
 ### Level 1️⃣
 
