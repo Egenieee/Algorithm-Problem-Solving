@@ -27,6 +27,7 @@
 * [외계어 사전](https://school.programmers.co.kr/learn/courses/30/lessons/120869)
 * [컨트롤 제트](https://school.programmers.co.kr/learn/courses/30/lessons/120853)
 * [n의 배수 고르기](https://school.programmers.co.kr/learn/courses/30/lessons/120905)
+* [옷가게 할인받기](https://school.programmers.co.kr/learn/courses/30/lessons/120818)
 
 ### Level 1️⃣
 
