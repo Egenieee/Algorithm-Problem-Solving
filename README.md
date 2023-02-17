@@ -83,6 +83,7 @@
 * [숫자 짝꿍](https://school.programmers.co.kr/learn/courses/30/lessons/131128)
 * [삼총사](https://school.programmers.co.kr/learn/courses/30/lessons/131705)
 * [자연수 뒤집어 배열로 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/12932)
+* [둘만의 암호](https://school.programmers.co.kr/learn/courses/30/lessons/155652)
 
 ### Level 2️⃣
 * [JadenCase 문자열 만들기](https://programmers.co.kr/learn/courses/30/lessons/12951)
