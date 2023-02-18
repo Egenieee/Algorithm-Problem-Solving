@@ -30,6 +30,7 @@
 * [옷가게 할인받기](https://school.programmers.co.kr/learn/courses/30/lessons/120818)
 * [문자열 정렬하기 (1)](https://school.programmers.co.kr/learn/courses/30/lessons/120850)
 * [숨어있는 숫자의 덧셈 (1)](https://school.programmers.co.kr/learn/courses/30/lessons/120851)
+* [치킨 쿠폰](https://school.programmers.co.kr/learn/courses/30/lessons/120884)
 
 ### Level 1️⃣
 
