@@ -6,10 +6,13 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+// {"15:00", "17:00"}, {"16:40", "18:20"}, {"14:20", "15:20"}, {"14:10", "19:20"}, {"18:20", "21:20"}
+// {"13:00", "13:30"}, {"13:40", "14:30"}, {"13:40", "14:30"}, {"14:40", "15:30"}
+
 public class Solution {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.solution(new String[][]{{"13:00", "13:30"}, {"13:40", "14:30"}, {"13:40", "14:30"}, {"14:50", "15:30"}}));
+        System.out.println(solution.solution(new String[][]{{"15:00", "17:00"}, {"16:40", "18:20"}, {"14:20", "15:20"}, {"14:10", "19:20"}, {"18:20", "21:20"}}));
     }
 
     public int solution(String[][] book_time) {
@@ -24,8 +27,9 @@ public class Solution {
         List<Room> roomList = new ArrayList<>();
 
         for (Book book : bookList) {
-            if (isValidReuseRoom(book, roomList)) {
-                Room room = getRoom(roomList, book);
+            Room room = getRoom(roomList, book);
+
+            if (room != null) {
                 room.addBook(book);
             } else {
                 roomList.add(new Room(book));
@@ -35,32 +39,31 @@ public class Solution {
         return roomList.size();
     }
 
-    private boolean isValidReuseRoom(Book book, List<Room> roomList) {
-        for (Room room : roomList) {
-            room.books.sort(new BookEndComparator());
-            for (Book booked : room.books) {
-                // book의 시작 시간보다 전에 끝나는 방이 있는지 확인하기
-                if (booked.end.isBefore(book.start) || booked.end.equals(book.start)) {
-                    return true;
-                }
-            }
-        }
-
-        return false;
-    }
+    // 13:00 - 13:30 -> room1
+    // 13:40 - 14:30 -> room1
+    // 13:40 - 14:30 -> room2
+    // 14:50 - 15:50 -> room1
 
     // 방이 현재 사용할 수 있는 방인지 확인하기
     private Room getRoom(List<Room> roomList, Book book) {
+        Room validRoom = null;
+
         for (Room room : roomList) {
             for (Book booked : room.books) {
                 // book의 시작 시간보다 전에 끝나는 방이 있는지 확인하기
                 if (booked.end.isBefore(book.start) || booked.end.equals(book.start)) {
-                    return room;
+                    validRoom = room;
+                } else {
+                    validRoom = null;
                 }
+            }
+
+            if (validRoom != null) {
+                return validRoom;
             }
         }
 
-        return null;
+        return validRoom;
     }
 
     public static class Room {
