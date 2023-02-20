@@ -8,11 +8,14 @@ import java.util.List;
 
 // {"15:00", "17:00"}, {"16:40", "18:20"}, {"14:20", "15:20"}, {"14:10", "19:20"}, {"18:20", "21:20"}
 // {"13:00", "13:30"}, {"13:40", "14:30"}, {"13:40", "14:30"}, {"14:40", "15:30"}
+// {"09:10", "10:10"}, {"10:20", "12:20"}
 
 public class Solution {
+    public static int roomNumberCount = 1;
+
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.solution(new String[][]{{"15:00", "17:00"}, {"16:40", "18:20"}, {"14:20", "15:20"}, {"14:10", "19:20"}, {"18:20", "21:20"}}));
+        System.out.println(solution.solution(new String[][]{{"09:10", "10:10"}, {"10:20", "12:20"}}));
     }
 
     public int solution(String[][] book_time) {
@@ -27,12 +30,15 @@ public class Solution {
         List<Room> roomList = new ArrayList<>();
 
         for (Book book : bookList) {
+            roomList.sort(new RoomBookTimeComparator());
             Room room = getRoom(roomList, book);
 
             if (room != null) {
-                room.addBook(book);
+                room.setBook(book);
+                System.out.println("book time " + book.start + " ~ " + book.end + " is assigned room number " + room.roomNumber);
             } else {
                 roomList.add(new Room(book));
+                System.out.println("book time " + book.start + " ~ " + book.end + " is assigned room number " + roomList.get(roomList.size() - 1).roomNumber);
             }
         }
 
@@ -49,14 +55,7 @@ public class Solution {
         Room validRoom = null;
 
         for (Room room : roomList) {
-            for (Book booked : room.books) {
-                // book의 시작 시간보다 전에 끝나는 방이 있는지 확인하기
-                if (booked.end.isBefore(book.start) || booked.end.equals(book.start)) {
-                    validRoom = room;
-                } else {
-                    validRoom = null;
-                }
-            }
+            validRoom = room.getValidRoom(book);
 
             if (validRoom != null) {
                 return validRoom;
@@ -67,22 +66,32 @@ public class Solution {
     }
 
     public static class Room {
-        List<Book> books;
+        Book book;
+
+        int roomNumber;
 
         public Room(Book book) {
-            this.books = new ArrayList<>();
-            books.add(book);
+            this.book = book;
+            this.roomNumber = Solution.roomNumberCount++;
         }
 
-        public void addBook(Book book) {
-            books.add(book);
+        public void setBook(Book book) {
+            this.book = book;
+        }
+
+        public Room getValidRoom(Book book) {
+            if (this.book.end.isBefore(book.start) || this.book.end.equals(book.start)) {
+                return this;
+            }
+
+            return null;
         }
     }
 
-    public static class BookEndComparator implements Comparator<Book> {
+    public static class RoomBookTimeComparator implements Comparator<Room> {
         @Override
-        public int compare(Book book, Book t1) {
-            return book.end.compareTo(t1.end);
+        public int compare(Room roomOne, Room roomTwo) {
+            return roomOne.book.end.compareTo(roomTwo.book.end);
         }
     }
 
