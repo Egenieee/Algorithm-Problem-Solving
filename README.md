@@ -33,6 +33,7 @@
 * [치킨 쿠폰](https://school.programmers.co.kr/learn/courses/30/lessons/120884)
 * [대문자와 소문자](https://school.programmers.co.kr/learn/courses/30/lessons/120893)
 * [k의 개수](https://school.programmers.co.kr/learn/courses/30/lessons/120887)
+* [저주의 숫자 3](https://school.programmers.co.kr/learn/courses/30/lessons/120871)
 
 ### Level 1️⃣
 
