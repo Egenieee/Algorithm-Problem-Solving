@@ -34,6 +34,7 @@
 * [대문자와 소문자](https://school.programmers.co.kr/learn/courses/30/lessons/120893)
 * [k의 개수](https://school.programmers.co.kr/learn/courses/30/lessons/120887)
 * [저주의 숫자 3](https://school.programmers.co.kr/learn/courses/30/lessons/120871)
+* [직사각형의 넓이 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/120860)
 
 ### Level 1️⃣
 
