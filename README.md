@@ -37,6 +37,7 @@
 * [직사각형의 넓이 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/120860)
 * [한 번만 등장한 문자](https://school.programmers.co.kr/learn/courses/30/lessons/120896)
 * [진료순서 정하기](https://school.programmers.co.kr/learn/courses/30/lessons/120835)
+* [나이 출력](https://school.programmers.co.kr/learn/courses/30/lessons/120820)
 
 ### Level 1️⃣
 
