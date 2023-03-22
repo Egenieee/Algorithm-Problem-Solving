@@ -40,6 +40,7 @@
 * [나이 출력](https://school.programmers.co.kr/learn/courses/30/lessons/120820)
 * [문자열 밀기](https://school.programmers.co.kr/learn/courses/30/lessons/120921)
 * [안전지대](https://school.programmers.co.kr/learn/courses/30/lessons/120866)
+* [다항식 더하기](https://school.programmers.co.kr/learn/courses/30/lessons/120863)
 
 ### Level 1️⃣
 
