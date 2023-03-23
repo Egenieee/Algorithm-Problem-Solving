@@ -41,6 +41,7 @@
 * [문자열 밀기](https://school.programmers.co.kr/learn/courses/30/lessons/120921)
 * [안전지대](https://school.programmers.co.kr/learn/courses/30/lessons/120866)
 * [다항식 더하기](https://school.programmers.co.kr/learn/courses/30/lessons/120863)
+* [다음에 올 숫자](https://school.programmers.co.kr/learn/courses/30/lessons/120924)
 
 ### Level 1️⃣
 
