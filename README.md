@@ -101,6 +101,7 @@
 * [대충 만든 자판](https://school.programmers.co.kr/learn/courses/30/lessons/160586)
 * [카드 뭉치](https://school.programmers.co.kr/learn/courses/30/lessons/159994)
 * [덧칠하기](https://school.programmers.co.kr/learn/courses/30/lessons/161989)
+* [햄버거 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/133502)
 
 ### Level 2️⃣
 * [JadenCase 문자열 만들기](https://programmers.co.kr/learn/courses/30/lessons/12951)
