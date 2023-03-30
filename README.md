@@ -103,6 +103,7 @@
 * [덧칠하기](https://school.programmers.co.kr/learn/courses/30/lessons/161989)
 * [햄버거 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/133502)
 * [콜라 문제](https://school.programmers.co.kr/learn/courses/30/lessons/132267)
+* [푸트 파이터 대회](https://school.programmers.co.kr/learn/courses/30/lessons/134240)
 
 ### Level 2️⃣
 * [JadenCase 문자열 만들기](https://programmers.co.kr/learn/courses/30/lessons/12951)
