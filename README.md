@@ -45,6 +45,7 @@
 * [특이한 정렬](https://school.programmers.co.kr/learn/courses/30/lessons/120880)
 * [연속된 수의 합](https://school.programmers.co.kr/learn/courses/30/lessons/120923)
 * [숫자 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/120904)
+* [가까운 수](https://school.programmers.co.kr/learn/courses/30/lessons/120890)
 
 ### Level 1️⃣
 
