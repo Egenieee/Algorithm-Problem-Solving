@@ -46,6 +46,7 @@
 * [연속된 수의 합](https://school.programmers.co.kr/learn/courses/30/lessons/120923)
 * [숫자 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/120904)
 * [가까운 수](https://school.programmers.co.kr/learn/courses/30/lessons/120890)
+* [캐릭터의 좌표](https://school.programmers.co.kr/learn/courses/30/lessons/120861)
 
 ### Level 1️⃣
 
