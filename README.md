@@ -48,6 +48,7 @@
 * [가까운 수](https://school.programmers.co.kr/learn/courses/30/lessons/120890)
 * [캐릭터의 좌표](https://school.programmers.co.kr/learn/courses/30/lessons/120861)
 * [중복된 문자 제거](https://school.programmers.co.kr/learn/courses/30/lessons/120888)
+* [가장 큰 수 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/120899)
 
 ### Level 1️⃣
 
