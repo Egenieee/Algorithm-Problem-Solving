@@ -146,6 +146,7 @@
 * [배달](https://school.programmers.co.kr/learn/courses/30/lessons/12978)
 * [N-Queen](https://school.programmers.co.kr/learn/courses/30/lessons/12952)
 * [귤 고르기](https://school.programmers.co.kr/learn/courses/30/lessons/138476)
+* [K진수에서 소수 개수 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/92335)
 
 ### Level 3️⃣
 * [베스트앨범](https://programmers.co.kr/learn/courses/30/lessons/42579)
