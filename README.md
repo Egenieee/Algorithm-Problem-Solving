@@ -112,6 +112,7 @@
 * [푸트 파이터 대회](https://school.programmers.co.kr/learn/courses/30/lessons/134240)
 * [추억 점수](https://school.programmers.co.kr/learn/courses/30/lessons/176963)
 * [명예의 전당 (1)](https://school.programmers.co.kr/learn/courses/30/lessons/138477)
+* [달리기 경주](https://school.programmers.co.kr/learn/courses/30/lessons/178871)
 
 ### Level 2️⃣
 * [JadenCase 문자열 만들기](https://programmers.co.kr/learn/courses/30/lessons/12951)
