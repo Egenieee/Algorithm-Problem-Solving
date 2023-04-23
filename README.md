@@ -152,6 +152,7 @@
 * [K진수에서 소수 개수 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/92335)
 * [[1차] 뉴스 클러스터링](https://school.programmers.co.kr/learn/courses/30/lessons/17677)
 * [숫자의 표현](https://school.programmers.co.kr/learn/courses/30/lessons/12924)
+* [구명보트](https://school.programmers.co.kr/learn/courses/30/lessons/42885) - 다시 보기 (효율성)
 
 ### Level 3️⃣
 * [베스트앨범](https://programmers.co.kr/learn/courses/30/lessons/42579)
