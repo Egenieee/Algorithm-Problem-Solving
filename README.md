@@ -50,6 +50,7 @@
 * [중복된 문자 제거](https://school.programmers.co.kr/learn/courses/30/lessons/120888)
 * [가장 큰 수 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/120899)
 * [문자열 정렬하기 (2)](https://school.programmers.co.kr/learn/courses/30/lessons/120911)
+* [양꼬치](https://school.programmers.co.kr/learn/courses/30/lessons/120830)
 
 ### Level 1️⃣
 
