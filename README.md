@@ -156,21 +156,40 @@
 * [구명보트](https://school.programmers.co.kr/learn/courses/30/lessons/42885) - 다시 보기 (효율성)
 
 ### Level 3️⃣
+
 * [베스트앨범](https://programmers.co.kr/learn/courses/30/lessons/42579)
 
 -----
 
 ## baekjoon
-### 단계별로 풀어보기 
+
+### 단계별로 풀어보기
+
 #### 조건문
+
 * [오븐 시계](https://www.acmicpc.net/problem/2525)
 * [주사위 세개](https://www.acmicpc.net/problem/2480)
+* [알람 시계](https://www.acmicpc.net/problem/2884)
+
+#### 반복문
+
+* [별 찍기 - 2](https://www.acmicpc.net/problem/2439)
 
 #### 함수
+
 * [셀프 넘버](https://www.acmicpc.net/problem/4673)
 * [한수](https://www.acmicpc.net/problem/1065)
 
+#### 1차원 배열
+
+* [평균](https://www.acmicpc.net/problem/2439)
+
+#### 2차원 배열
+
+* [색종이](https://www.acmicpc.net/problem/10809)
+
 #### 문자열
+
 * [알파벳 찾기](https://www.acmicpc.net/problem/10809)
 * [단어 공부](https://www.acmicpc.net/problem/1157)
 * [숫자의 합](https://www.acmicpc.net/problem/11720)
