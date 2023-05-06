@@ -51,6 +51,7 @@
 * [가장 큰 수 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/120899)
 * [문자열 정렬하기 (2)](https://school.programmers.co.kr/learn/courses/30/lessons/120911)
 * [양꼬치](https://school.programmers.co.kr/learn/courses/30/lessons/120830)
+* [전국 대회 선발 고사](https://school.programmers.co.kr/learn/courses/30/lessons/181851)
 
 ### Level 1️⃣
 
