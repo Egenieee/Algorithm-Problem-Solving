@@ -283,6 +283,7 @@
 * [수 찾기](https://www.acmicpc.net/problem/1920) - Binary search
 * [소수&팰린드롬](https://www.acmicpc.net/problem/1747)
 * [토마토](https://www.acmicpc.net/problem/7576) - BFS
+* [적록색약](https://www.acmicpc.net/problem/10026) - BFS
 
 
 -----
