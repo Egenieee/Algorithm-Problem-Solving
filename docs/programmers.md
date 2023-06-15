@@ -154,6 +154,7 @@
 * [숫자의 표현](https://school.programmers.co.kr/learn/courses/30/lessons/12924)
 * [구명보트](https://school.programmers.co.kr/learn/courses/30/lessons/42885) - 다시 보기 (효율성)
 * [예상 대진표](https://school.programmers.co.kr/learn/courses/30/lessons/12985)
+* [뒤에 있는 큰 수](https://school.programmers.co.kr/learn/courses/30/lessons/154539)
 
 ### Level 3️⃣
 
