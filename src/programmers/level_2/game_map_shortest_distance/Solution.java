@@ -21,8 +21,8 @@ public class Solution {
     }
 
     public int solution(int[][] maps) {
-        int n = maps[0].length;
-        int m = maps.length;
+        int n = maps.length; // 행의 크기
+        int m = maps[0].length; // 열의 크기
 
         int[][] dist = new int[n][m];
 
