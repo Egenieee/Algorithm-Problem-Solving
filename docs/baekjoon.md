@@ -117,16 +117,23 @@
 * [괄호](https://www.acmicpc.net/problem/9012)
 * [오큰수](https://www.acmicpc.net/problem/17298) - 다시 풀어보기
 
+#### BFS/DFS
+
+* [토마토](https://www.acmicpc.net/problem/7576) - BFS
+* [적록색약](https://www.acmicpc.net/problem/10026) - BFS
+* [단지번호붙이기](https://www.acmicpc.net/problem/2667) - BFS
+* [유기농 배추](https://www.acmicpc.net/problem/1012) - BFS
+* [숨바꼭질](https://www.acmicpc.net/problem/1697) - BFS
+
+#### 시뮬레이션
+
+* [아이 러브 크로아티아](https://www.acmicpc.net/problem/9517)
+
 ### 기타 - (나중에 정리)
 
 * [팰린드롬 만들기](https://www.acmicpc.net/problem/1213)
 * [다음 팰린드롬 수](https://www.acmicpc.net/problem/1334) - 실패. 다시 풀기
 * [수 이어 쓰기](https://www.acmicpc.net/problem/1515)
-* [단지번호붙이기](https://www.acmicpc.net/problem/2667) - BFS
-* [유기농 배추](https://www.acmicpc.net/problem/1012) - BFS
-* [숨바꼭질](https://www.acmicpc.net/problem/1697) - BFS
 * [친구 네트워크](https://www.acmicpc.net/problem/4195) - union find
 * [수 찾기](https://www.acmicpc.net/problem/1920) - Binary search
 * [소수&팰린드롬](https://www.acmicpc.net/problem/1747)
-* [토마토](https://www.acmicpc.net/problem/7576) - BFS
-* [적록색약](https://www.acmicpc.net/problem/10026) - BFS
